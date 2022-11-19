@@ -1,1 +1,72 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Belleza", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+body header {
+  background-color: gainsboro;
+  height: 3.8em;
+  width: 100%;
+  box-shadow: 0 5px 3px -3px gray;
+  position: fixed;
+  z-index: 2;
+}
+body header .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .header-wrapper .logo {
+  width: 10%;
+  margin-left: 1em;
+}
+body header .header-wrapper ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin-right: 2em;
+}
+body header .header-wrapper ul li {
+  list-style-type: none;
+  font-size: 1.3rem;
+}
+body header .header-wrapper ul li a {
+  text-decoration: none;
+  color: #282828;
+}
+body main .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  background-image: url("../images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body main .hero h1 {
+  color: white;
+  font-size: 4rem;
+}
+body footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: whitesmoke;
+  padding: 2em;
+}/*# sourceMappingURL=style.css.map */

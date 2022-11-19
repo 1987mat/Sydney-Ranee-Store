@@ -7,9 +7,17 @@
   <title>Sydney Ranee` Store</title>
   <?php wp_head();?>
 </head>
-<body>
+<body <?php body_class();?>>
   <header>
-    <?php $logo = get_template_directory_uri() . './images/logo.png';?>
-    <img src=<?php echo $logo;?>>
+    <div class="header-wrapper">
+      <img src=<?php echo get_template_directory_uri() . '/images/logo.png';?> class="logo">
+      <?php 
+        wp_nav_menu(
+          array(
+            'theme-location' => 'top-menu'
+          )
+        );
+      ?>
+    </div>
   </header>
   
