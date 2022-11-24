@@ -14,7 +14,7 @@
       <?php 
         wp_nav_menu(
           array(
-            'theme-location' => 'top-menu'
+            'theme-location' => 'top-menu',
           )
         );
       ?>

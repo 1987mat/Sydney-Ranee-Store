@@ -1,10 +1,14 @@
 footer {
-  margin-top: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(230, 204, 178, 1) 0%,
+    rgba(208, 200, 167, 1) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: fit-content;
+  height: 4em;
   background-color: whitesmoke;
   padding: 2em;
+  width: 100%;
 }

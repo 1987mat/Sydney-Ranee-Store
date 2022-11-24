@@ -1,8 +1,8 @@
 header {
-  background-color: gainsboro;
-  height: 3.8em;
+  background-color: white;
+  height: 4em;
   width: 100%;
-  box-shadow: 0 5px 3px -3px gray;
+  box-shadow: 0 4px 3px -3px gray;
   position: fixed;
   z-index: 2;
 
@@ -10,6 +10,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .dashicons-cart {
+      padding-top: 3px;
+    }
 
     .logo {
       width: 10%;
@@ -20,7 +24,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 3em;
+      gap: 4em;
       margin-right: 2em;
 
       li {
@@ -30,6 +34,11 @@ header {
         a {
           text-decoration: none;
           color: #282828;
+          transition: color 0.2s ease-in-out;
+
+          &:hover {
+            color: gainsboro;
+          }
         }
       }
     }

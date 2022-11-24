@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Belleza', sans-serif;
+  // border: 1px solid red;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   flex-direction: column;
 
   @import 'components/header';
-  @import 'components/main';
+  @import 'components/home';
+  @import 'components/cart';
   @import 'components/footer';
 }

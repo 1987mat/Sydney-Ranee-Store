@@ -1,0 +1,155 @@
+.woocommerce {
+  min-height: calc(100vh - 4em);
+  background: linear-gradient(
+    90deg,
+    rgba(230, 204, 178, 1) 0%,
+    rgba(208, 200, 167, 1) 100%
+  );
+  padding: 6em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: #282828;
+  }
+
+  form {
+    width: 80vw;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8em 0 5em 0;
+    border-radius: 2px;
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 5em 1em;
+
+      tbody {
+        tr {
+          .remove {
+            text-decoration: none;
+
+            .dashicons-trash {
+              color: #282828;
+              transition: transform 0.4s ease-in-out;
+
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+
+          .product-thumbnail {
+            img {
+              width: 5em;
+              height: 5em;
+            }
+          }
+
+          td {
+            text-align: center;
+
+            button {
+              padding: 0.6em;
+              border-radius: 2px;
+              border: none;
+              opacity: 1;
+              transition: opacity 0.4s ease-in-out;
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+
+            .qty {
+              width: 2em;
+              text-align: center;
+            }
+
+            .coupon {
+              margin-top: 4em;
+
+              #coupon_code {
+                padding: 0.6em;
+                border-radius: 3px;
+                width: fit-content;
+                outline: none;
+                border: none;
+              }
+            }
+            .wp-element-button {
+              margin-top: 2em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 90%;
+    border: 0.5px solid gray;
+  }
+
+  .cart-collaterals {
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 3em;
+    }
+
+    table {
+      border: 0.5px solid gray;
+      border-radius: 5px;
+      width: 60%;
+      margin: 0 auto;
+      box-shadow: 2px 2px 2px gray;
+
+      tr {
+        th {
+          border: 0.5px solid gray;
+          padding: 1em;
+        }
+
+        td {
+          border: 0.5px solid gray;
+          padding: 1em;
+        }
+
+        ul {
+          li {
+            list-style-type: none;
+          }
+        }
+
+        form {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    .wc-proceed-to-checkout {
+      text-align: center;
+      margin-top: 5em;
+
+      a {
+        text-decoration: none;
+        background-color: gainsboro;
+        padding: 1em;
+        border-radius: 2px;
+        box-shadow: 0 3px 2px -2px gray;
+        opacity: 1;
+        transition: opacity 0.4s ease-in-out;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

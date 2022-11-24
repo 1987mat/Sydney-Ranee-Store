@@ -11,10 +11,10 @@ body {
   flex-direction: column;
 }
 body header {
-  background-color: gainsboro;
-  height: 3.8em;
+  background-color: white;
+  height: 4em;
   width: 100%;
-  box-shadow: 0 5px 3px -3px gray;
+  box-shadow: 0 4px 3px -3px gray;
   position: fixed;
   z-index: 2;
 }
@@ -22,6 +22,9 @@ body header .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+body header .header-wrapper .dashicons-cart {
+  padding-top: 3px;
 }
 body header .header-wrapper .logo {
   width: 10%;
@@ -31,7 +34,7 @@ body header .header-wrapper ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 4em;
   margin-right: 2em;
 }
 body header .header-wrapper ul li {
@@ -41,32 +44,194 @@ body header .header-wrapper ul li {
 body header .header-wrapper ul li a {
   text-decoration: none;
   color: #282828;
+  transition: color 0.2s ease-in-out;
 }
-body main .hero {
+body header .header-wrapper ul li a:hover {
+  color: gainsboro;
+}
+body .content-area {
+  min-height: calc(100vh - 4em);
+  background: linear-gradient(90deg, rgb(230, 204, 178) 0%, rgb(208, 200, 167) 100%);
+  padding: 10em 3em;
+}
+body .content-area a {
+  text-decoration: none;
+}
+body .content-area .products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6em;
+  justify-content: center;
+  align-items: center;
+}
+body .content-area .products li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .content-area .products li .woocommerce-LoopProduct-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #282828;
+}
+body .content-area .products li .wp-element-button {
+  background-color: gainsboro;
+  padding: 1em;
+  border-radius: 2px;
+  color: #282828;
+  margin-top: 1em;
+  box-shadow: 0 3px 2px -2px gray;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+body .content-area .products li .wp-element-button:hover {
+  opacity: 0.8;
+}
+body .content-area .products li img {
+  border-radius: 2px;
+  transition: transform 0.8s ease;
+}
+body .content-area .products li img:hover {
+  transform: scale(1.03);
+}
+body .content-area .products li .button {
+  transition: transform 0.4s ease;
+}
+body .content-area .products li .button:hover {
+  transform: translateY(-2px);
+}
+body .content-area .products li .added_to_cart {
+  margin: 1em;
+  color: #282828;
+}
+body .woocommerce {
+  min-height: calc(100vh - 4em);
+  background: linear-gradient(90deg, rgb(230, 204, 178) 0%, rgb(208, 200, 167) 100%);
+  padding: 6em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .woocommerce a {
+  color: #282828;
+}
+body .woocommerce form {
+  width: 80vw;
+  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  width: 100%;
-  background-image: url("../images/hero.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  margin: 8em 0 5em 0;
+  border-radius: 2px;
 }
-body main .hero h1 {
-  color: white;
-  font-size: 4rem;
+body .woocommerce form table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 5em 1em;
+}
+body .woocommerce form table tbody tr .remove {
+  text-decoration: none;
+}
+body .woocommerce form table tbody tr .remove .dashicons-trash {
+  color: #282828;
+  transition: transform 0.4s ease-in-out;
+}
+body .woocommerce form table tbody tr .remove .dashicons-trash:hover {
+  transform: scale(1.1);
+}
+body .woocommerce form table tbody tr .product-thumbnail img {
+  width: 5em;
+  height: 5em;
+}
+body .woocommerce form table tbody tr td {
+  text-align: center;
+}
+body .woocommerce form table tbody tr td button {
+  padding: 0.6em;
+  border-radius: 2px;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+body .woocommerce form table tbody tr td button:hover {
+  opacity: 0.8;
+}
+body .woocommerce form table tbody tr td .qty {
+  width: 2em;
+  text-align: center;
+}
+body .woocommerce form table tbody tr td .coupon {
+  margin-top: 4em;
+}
+body .woocommerce form table tbody tr td .coupon #coupon_code {
+  padding: 0.6em;
+  border-radius: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  outline: none;
+  border: none;
+}
+body .woocommerce form table tbody tr td .wp-element-button {
+  margin-top: 2em;
+}
+body .woocommerce hr {
+  width: 90%;
+  border: 0.5px solid gray;
+}
+body .woocommerce .cart-collaterals h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 3em;
+}
+body .woocommerce .cart-collaterals table {
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px gray;
+}
+body .woocommerce .cart-collaterals table tr th {
+  border: 0.5px solid gray;
+  padding: 1em;
+}
+body .woocommerce .cart-collaterals table tr td {
+  border: 0.5px solid gray;
+  padding: 1em;
+}
+body .woocommerce .cart-collaterals table tr ul li {
+  list-style-type: none;
+}
+body .woocommerce .cart-collaterals table tr form {
+  justify-content: flex-start;
+}
+body .woocommerce .cart-collaterals .wc-proceed-to-checkout {
+  text-align: center;
+  margin-top: 5em;
+}
+body .woocommerce .cart-collaterals .wc-proceed-to-checkout a {
+  text-decoration: none;
+  background-color: gainsboro;
+  padding: 1em;
+  border-radius: 2px;
+  box-shadow: 0 3px 2px -2px gray;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+body .woocommerce .cart-collaterals .wc-proceed-to-checkout a:hover {
+  opacity: 0.8;
 }
 body footer {
-  margin-top: auto;
+  background: linear-gradient(90deg, rgb(230, 204, 178) 0%, rgb(208, 200, 167) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 4em;
   background-color: whitesmoke;
   padding: 2em;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
