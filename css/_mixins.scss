@@ -1,0 +1,46 @@
+@mixin button() {
+  background-color: $secondary-color;
+  padding: 1em;
+  border-radius: 5px;
+  border: none;
+  color: #282828;
+  margin-top: 1em;
+  box-shadow: 0 3px 2px -2px gray;
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@mixin inputNumber($margin) {
+  .quantity {
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: $margin;
+    width: fit-content;
+    padding: 0.6em;
+
+    .qty {
+      width: 2em;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      pointer-events: none;
+    }
+
+    .minus,
+    .plus {
+      background-color: transparent;
+      border: none;
+    }
+
+    .minus:hover,
+    .plus:hover {
+      cursor: pointer;
+    }
+  }
+}

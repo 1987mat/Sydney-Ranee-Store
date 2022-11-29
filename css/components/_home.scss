@@ -1,74 +1,41 @@
-.content-area {
-  min-height: calc(100vh - 4em);
-  background: linear-gradient(
-    90deg,
-    rgba(230, 204, 178, 1) 0%,
-    rgba(208, 200, 167, 1) 100%
-  );
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6em;
+  justify-content: center;
+  align-items: center;
 
-  padding: 10em 3em;
-
-  a {
-    text-decoration: none;
-  }
-
-  .products {
+  li {
     display: flex;
-    flex-wrap: wrap;
-    gap: 6em;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    li {
+    .woocommerce-LoopProduct-link {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 1em;
+      color: #282828;
+    }
 
-      .woocommerce-LoopProduct-link {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #282828;
+    .wp-element-button {
+      @include button();
+    }
+
+    img {
+      border-radius: 2px;
+      transition: transform 0.8s ease;
+
+      &:hover {
+        transform: scale(1.03);
       }
+    }
 
-      .wp-element-button {
-        background-color: gainsboro;
-        padding: 1em;
-        border-radius: 2px;
-        color: #282828;
-        margin-top: 1em;
-        box-shadow: 0 3px 2px -2px gray;
-        opacity: 1;
-        transition: opacity 0.4s ease-in-out;
-
-        &:hover {
-          opacity: 0.8;
-        }
-      }
-
-      img {
-        border-radius: 2px;
-        transition: transform 0.8s ease;
-
-        &:hover {
-          transform: scale(1.03);
-        }
-      }
-
-      .button {
-        transition: transform 0.4s ease;
-
-        &:hover {
-          transform: translateY(-2px);
-        }
-      }
-
-      .added_to_cart {
-        margin: 1em;
-        color: #282828;
-      }
+    .added_to_cart {
+      margin: 1em;
+      color: #282828;
     }
   }
 }
