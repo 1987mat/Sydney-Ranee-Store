@@ -1,16 +1,46 @@
 footer {
-  background: linear-gradient(
-    90deg,
-    rgba(230, 204, 178, 1) 0%,
-    rgba(208, 200, 167, 1) 100%
-  );
+  background-color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  height: 4em;
+  gap: 12em;
+  height: 6em;
   background-color: whitesmoke;
   padding: 2em;
   width: 100%;
+  box-shadow: 0 -3px 3px gray;
+
+  .footer-menu {
+    li {
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .sm-icons-footer {
+    display: flex;
+    gap: 2em;
+
+    a {
+      text-decoration: none;
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  li {
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 
   span {
     font-weight: bold;

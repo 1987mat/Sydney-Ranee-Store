@@ -20,11 +20,16 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
 
-register_nav_menus(
-  array(
-    'top_menu' => 'Top Menu'
-  )
-);
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header' => __( 'Menu Header' ),
+      'footer' => __( 'Menu Footer' )
+    )
+  );
+}
+
+add_action( 'init', 'register_my_menus' );
 
 add_image_size('post_image', 1100, 750, true);
 
@@ -63,3 +68,4 @@ function add_script_to_footer(){
 
 // jQuery plus & minus button for quantity input
 add_action( 'wp_footer', 'add_script_to_footer');
+

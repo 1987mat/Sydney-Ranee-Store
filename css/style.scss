@@ -20,11 +20,7 @@ body {
 
   .content-area {
     min-height: calc(100vh - 4em);
-    background: linear-gradient(
-      90deg,
-      rgba(230, 204, 178, 1) 0%,
-      rgba(208, 200, 167, 1) 100%
-    );
+    background: $primary-color;
     padding: 10em 3em;
 
     a {
@@ -90,4 +86,5 @@ body {
   }
 
   @import 'components/footer';
+  @import 'components/search';
 }

@@ -20,38 +20,71 @@ body header {
   box-shadow: 0 3px 3px -1px gray;
   position: fixed;
   z-index: 2;
+  top: 0;
+  transition: top 0.6s ease-in-out;
+}
+body header.hide {
+  top: -200px;
 }
 body header .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-body header .header-wrapper .dashicons-cart {
-  padding-top: 3px;
+  margin-right: 3em;
 }
 body header .header-wrapper .logo {
   width: 10%;
   margin-left: 1em;
 }
-body header .header-wrapper ul {
+body header .header-wrapper .header-nav_search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header .header-wrapper .header-nav_search-wrapper ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4em;
   margin-right: 2em;
 }
-body header .header-wrapper ul li {
+body header .header-wrapper .header-nav_search-wrapper ul li {
   list-style-type: none;
   font-size: 1.3rem;
 }
-body header .header-wrapper ul li a {
+body header .header-wrapper .header-nav_search-wrapper ul li.current_page_item a,
+body header .header-wrapper .header-nav_search-wrapper ul li.current_page_item span {
+  color: gainsboro;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
+}
+body header .header-wrapper .header-nav_search-wrapper ul li a {
   text-decoration: none;
   font-weight: bold;
   color: #282828;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, -webkit-text-decoration 0.2s ease;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+  transition: color 0.2s ease, text-decoration 0.2s ease, -webkit-text-decoration 0.2s ease;
 }
-body header .header-wrapper ul li a:hover {
+body header .header-wrapper .header-nav_search-wrapper ul li a:hover {
   color: gainsboro;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+}
+body header .header-wrapper .header-nav_search-wrapper ul li a .dashicons-cart {
+  padding-top: 3px;
+}
+body header .header-wrapper .header-nav_search-wrapper ul li a span:hover {
+  color: gainsboro;
+}
+body header .header-wrapper .header-nav_search-wrapper .dashicons-search {
+  font-size: 1.5rem;
+  transition: transform 0.4s ease-in-out;
+}
+body header .header-wrapper .header-nav_search-wrapper .dashicons-search:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 body .content-area {
   min-height: calc(100vh - 4em);
@@ -92,9 +125,10 @@ body .content-area .woocommerce-notices-wrapper .woocommerce-message a:visited {
 body .content-area .products {
   display: flex;
   flex-wrap: wrap;
-  gap: 6em;
-  justify-content: center;
+  justify-content: space-evenly;
+  gap: 4em;
   align-items: center;
+  padding: 0;
 }
 body .content-area .products li {
   display: flex;
@@ -153,6 +187,8 @@ body .content-area .product .entry-summary form {
 }
 body .content-area .product .entry-summary form .quantity {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid;
   border-radius: 5px;
   margin: 0;
@@ -162,12 +198,16 @@ body .content-area .product .entry-summary form .quantity {
   padding: 0.6em;
 }
 body .content-area .product .entry-summary form .quantity .qty {
-  width: 2em;
-  text-align: center;
   background-color: transparent;
   border: none;
   outline: none;
   pointer-events: none;
+  text-align: center;
+  width: 3em;
+}
+body .content-area .product .entry-summary form .quantity input::-webkit-outer-spin-button,
+body .content-area .product .entry-summary form .quantity input::-webkit-inner-spin-button {
+  display: none;
 }
 body .content-area .product .entry-summary form .quantity .minus,
 body .content-area .product .entry-summary form .quantity .plus {
@@ -267,6 +307,8 @@ body .woocommerce form table tbody tr td button:hover {
 }
 body .woocommerce form table tbody tr td .quantity {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid;
   border-radius: 5px;
   margin: 0 auto;
@@ -276,12 +318,16 @@ body .woocommerce form table tbody tr td .quantity {
   padding: 0.6em;
 }
 body .woocommerce form table tbody tr td .quantity .qty {
-  width: 2em;
-  text-align: center;
   background-color: transparent;
   border: none;
   outline: none;
   pointer-events: none;
+  text-align: center;
+  width: 3em;
+}
+body .woocommerce form table tbody tr td .quantity input::-webkit-outer-spin-button,
+body .woocommerce form table tbody tr td .quantity input::-webkit-inner-spin-button {
+  display: none;
 }
 body .woocommerce form table tbody tr td .quantity .minus,
 body .woocommerce form table tbody tr td .quantity .plus {
@@ -511,15 +557,69 @@ body .woocommerce .checkout #order_review .place-order button:hover {
   transform: translateY(-2px);
 }
 body footer {
-  background: linear-gradient(90deg, rgb(230, 204, 178) 0%, rgb(208, 200, 167) 100%);
+  background-color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  height: 4em;
+  gap: 12em;
+  height: 6em;
   background-color: whitesmoke;
   padding: 2em;
   width: 100%;
+  box-shadow: 0 -3px 3px gray;
+}
+body footer .footer-menu li {
+  list-style-type: none;
+}
+body footer .footer-menu li a {
+  text-decoration: none;
+}
+body footer .sm-icons-footer {
+  display: flex;
+  gap: 2em;
+}
+body footer .sm-icons-footer a {
+  text-decoration: none;
+  transition: transform 0.4s ease;
+}
+body footer .sm-icons-footer a:hover {
+  transform: scale(1.1);
+}
+body footer li a:hover {
+  text-decoration: underline;
 }
 body footer span {
   font-weight: bold;
+}
+body .search-wrapper {
+  display: none;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border: none;
+  border-radius: 5px;
+  padding: 2.5em;
+  width: 100vw;
+  box-shadow: 0 3px 3px -1px gray;
+}
+body .search-wrapper input {
+  width: 95%;
+  padding: 1em;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+}
+body .search-wrapper span {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  font-size: 1.5rem;
+}
+body .search-wrapper span:hover {
+  cursor: pointer;
+}
+body .search-wrapper.show {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

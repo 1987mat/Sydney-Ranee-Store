@@ -11,13 +11,12 @@
   <header>
     <div class="header-wrapper">
       <img src=<?php echo get_template_directory_uri() . '/images/logo.png';?> class="logo">
-      <?php 
-        wp_nav_menu(
-          array(
-            'theme-location' => 'top-menu',
-          )
-        );
-      ?>
+      <div class="header-nav_search-wrapper">
+        <?php 
+          wp_nav_menu( array( 'theme_location' => 'header' ) );
+        ?>
+        <span class="dashicons dashicons-search"></span>
+      </div>
     </div>
   </header>
   

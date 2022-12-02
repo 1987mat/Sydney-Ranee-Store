@@ -1,9 +1,10 @@
 .products {
   display: flex;
   flex-wrap: wrap;
-  gap: 6em;
-  justify-content: center;
+  justify-content: space-evenly;
+  gap: 4em;
   align-items: center;
+  padding: 0;
 
   li {
     display: flex;

@@ -17,6 +17,8 @@
 @mixin inputNumber($margin) {
   .quantity {
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid;
     border-radius: 5px;
     margin: $margin;
@@ -24,12 +26,18 @@
     padding: 0.6em;
 
     .qty {
-      width: 2em;
-      text-align: center;
       background-color: transparent;
       border: none;
       outline: none;
       pointer-events: none;
+      text-align: center;
+      width: 3em;
+    }
+
+    // Remove arrows from input number
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      display: none;
     }
 
     .minus,
