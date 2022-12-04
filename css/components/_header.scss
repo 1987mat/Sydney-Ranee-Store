@@ -33,7 +33,7 @@ header {
         justify-content: center;
         align-items: center;
         gap: 4em;
-        margin-right: 2em;
+        margin-right: 3em;
 
         li {
           list-style-type: none;
@@ -75,12 +75,12 @@ header {
       }
 
       .dashicons-search {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         transition: transform 0.4s ease-in-out;
 
         &:hover {
           cursor: pointer;
-          transform: scale(1.02);
+          transform: scale(1.03);
         }
       }
     }

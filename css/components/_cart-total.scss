@@ -1,0 +1,86 @@
+.cart-collaterals {
+  margin-bottom: 10em;
+
+  .cart_totals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 3em;
+    }
+
+    table {
+      border: 0.5px solid gray;
+      border-radius: 5px;
+      width: 90%;
+      box-shadow: 2px 2px 2px gray;
+      background: rgba(245, 245, 245, 0.6);
+      border-collapse: collapse;
+
+      tr {
+        th {
+          border: 0.5px solid gray;
+          padding: 1em;
+        }
+
+        td {
+          border: 0.5px solid gray;
+          padding: 1em;
+
+          .woocommerce-shipping-calculator {
+            display: flex;
+            gap: 2em;
+
+            .shipping-calculator-form {
+              p {
+                width: 12em;
+              }
+
+              input,
+              button {
+                border: none;
+                padding: 0.5em;
+                border-radius: 2px;
+              }
+            }
+          }
+        }
+
+        ul {
+          li {
+            list-style-type: none;
+          }
+        }
+
+        form {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    .wc-proceed-to-checkout {
+      text-align: center;
+      margin-top: 5em;
+      transform: translateY(0);
+      transition: transform 0.4s ease;
+
+      a {
+        text-decoration: none;
+        background-color: whitesmoke;
+        padding: 1em;
+        font-weight: bold;
+        border-radius: 5px;
+        box-shadow: 0 3px 2px -2px gray;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

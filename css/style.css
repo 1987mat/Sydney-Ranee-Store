@@ -46,7 +46,7 @@ body header .header-wrapper .header-nav_search-wrapper ul {
   justify-content: center;
   align-items: center;
   gap: 4em;
-  margin-right: 2em;
+  margin-right: 3em;
 }
 body header .header-wrapper .header-nav_search-wrapper ul li {
   list-style-type: none;
@@ -79,12 +79,12 @@ body header .header-wrapper .header-nav_search-wrapper ul li a span:hover {
   color: gainsboro;
 }
 body header .header-wrapper .header-nav_search-wrapper .dashicons-search {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   transition: transform 0.4s ease-in-out;
 }
 body header .header-wrapper .header-nav_search-wrapper .dashicons-search:hover {
   cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 body .content-area {
   min-height: calc(100vh - 4em);
@@ -141,8 +141,14 @@ body .content-area .products li .woocommerce-LoopProduct-link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
   color: #282828;
+}
+body .content-area .products li .woocommerce-LoopProduct-link .woocommerce-loop-product__title {
+  display: none;
+}
+body .content-area .products li .woocommerce-LoopProduct-link .price {
+  font-weight: bold;
 }
 body .content-area .products li .wp-element-button {
   background-color: rgba(245, 245, 245, 0.6);
@@ -150,7 +156,8 @@ body .content-area .products li .wp-element-button {
   border-radius: 5px;
   border: none;
   color: #282828;
-  margin-top: 1em;
+  margin-top: 2em;
+  font-weight: bold;
   box-shadow: 0 3px 2px -2px gray;
   transform: translateY(0);
   transition: transform 0.4s ease;
@@ -224,7 +231,8 @@ body .content-area .product .entry-summary form .wp-element-button {
   border-radius: 5px;
   border: none;
   color: #282828;
-  margin-top: 1em;
+  margin-top: 2em;
+  font-weight: bold;
   box-shadow: 0 3px 2px -2px gray;
   transform: translateY(0);
   transition: transform 0.4s ease;
@@ -430,6 +438,8 @@ body .woocommerce .cart-collaterals .cart_totals table tr form {
 body .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout {
   text-align: center;
   margin-top: 5em;
+  transform: translateY(0);
+  transition: transform 0.4s ease;
 }
 body .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a {
   text-decoration: none;
@@ -438,11 +448,9 @@ body .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a {
   font-weight: bold;
   border-radius: 5px;
   box-shadow: 0 3px 2px -2px gray;
-  opacity: 0.9;
-  transition: opacity 0.4s ease-in-out;
 }
-body .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a:hover {
-  opacity: 1;
+body .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout:hover {
+  transform: translateY(-2px);
 }
 body .woocommerce .checkout_coupon {
   display: flex;
@@ -459,7 +467,8 @@ body .woocommerce .checkout_coupon button {
   border-radius: 5px;
   border: none;
   color: #282828;
-  margin-top: 1em;
+  margin-top: 2em;
+  font-weight: bold;
   box-shadow: 0 3px 2px -2px gray;
   transform: translateY(0);
   transition: transform 0.4s ease;
@@ -544,7 +553,8 @@ body .woocommerce .checkout #order_review .place-order button {
   border-radius: 5px;
   border: none;
   color: #282828;
-  margin-top: 1em;
+  margin-top: 2em;
+  font-weight: bold;
   box-shadow: 0 3px 2px -2px gray;
   transform: translateY(0);
   transition: transform 0.4s ease;
@@ -559,20 +569,15 @@ body .woocommerce .checkout #order_review .place-order button:hover {
 body footer {
   background-color: white;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 12em;
-  height: 6em;
+  gap: 2em;
+  height: 8em;
   background-color: whitesmoke;
   padding: 2em;
   width: 100%;
   box-shadow: 0 -3px 3px gray;
-}
-body footer .footer-menu li {
-  list-style-type: none;
-}
-body footer .footer-menu li a {
-  text-decoration: none;
 }
 body footer .sm-icons-footer {
   display: flex;
@@ -591,35 +596,96 @@ body footer li a:hover {
 body footer span {
   font-weight: bold;
 }
-body .search-wrapper {
-  display: none;
+body .search-wrapper-hidden {
+  display: flex;
+  flex-direction: column;
   background-color: whitesmoke;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
   border: none;
   border-radius: 5px;
   padding: 2.5em;
   width: 100vw;
+  height: 100vh;
   box-shadow: 0 3px 3px -1px gray;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
 }
-body .search-wrapper input {
+body .search-wrapper-hidden .search-input-field input {
   width: 95%;
   padding: 1em;
   font-size: 1.3rem;
   border: none;
   border-radius: 5px;
 }
-body .search-wrapper span {
+body .search-wrapper-hidden .search-input-field .close-icon {
   position: absolute;
   top: 20px;
   right: 50px;
   font-size: 1.5rem;
+  opacity: 1;
+  transition: opacity 0.4s ease-in;
 }
-body .search-wrapper span:hover {
+body .search-wrapper-hidden .search-input-field .close-icon:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
-body .search-wrapper.show {
-  display: block;
+body .search-wrapper-hidden .search-results {
+  padding: 5em 2em;
+}
+@-webkit-keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+body .search-wrapper-hidden .search-results .spinner {
+  margin: 0 auto;
+  border: 3px solid blue;
+  border-radius: 50%;
+  border-bottom-color: lightblue;
+  width: 4em;
+  height: 4em;
+  -webkit-animation: spinner 0.6s linear infinite;
+          animation: spinner 0.6s linear infinite;
+}
+body .search-wrapper-hidden .search-results p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+body .search-wrapper-hidden .search-results ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 4em;
+}
+body .search-wrapper-hidden .search-results ul li {
+  list-style-type: none;
+}
+body .search-wrapper-hidden .search-results ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+body .search-wrapper-hidden .search-results ul li a img {
+  border-radius: 2px;
+  width: 15em;
+}
+body .search-wrapper-hidden .search-results ul li a:hover {
+  transform: scale(1.01);
+}
+body .search-wrapper-hidden.show {
+  opacity: 1;
+  z-index: 10;
 }/*# sourceMappingURL=style.css.map */

@@ -1,24 +1,15 @@
 footer {
   background-color: white;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 12em;
-  height: 6em;
+  gap: 2em;
+  height: 8em;
   background-color: whitesmoke;
   padding: 2em;
   width: 100%;
   box-shadow: 0 -3px 3px gray;
-
-  .footer-menu {
-    li {
-      list-style-type: none;
-
-      a {
-        text-decoration: none;
-      }
-    }
-  }
 
   .sm-icons-footer {
     display: flex;

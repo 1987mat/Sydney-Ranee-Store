@@ -17,8 +17,16 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 1em;
+      gap: 2em;
       color: #282828;
+
+      .woocommerce-loop-product__title {
+        display: none;
+      }
+
+      .price {
+        font-weight: bold;
+      }
     }
 
     .wp-element-button {
