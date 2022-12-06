@@ -1,8 +1,7 @@
 header {
-  background-color: white;
+  background-color: transparent;
   height: 4.5em;
   width: 100%;
-  box-shadow: 0 3px 3px -1px gray;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -37,19 +36,16 @@ header {
             a {
               text-decoration: none;
               font-weight: bold;
-              transition: color 0.2s ease;
+              transition: color 0.4s ease;
 
               &:hover {
                 color: gainsboro;
               }
-            }
 
-            &.current_page_item {
-              a,
-              span {
-                text-decoration: underline;
-                text-underline-offset: 15px;
-                text-decoration-thickness: 3px;
+              &:hover {
+                span {
+                  color: gainsboro;
+                }
               }
             }
 
@@ -63,11 +59,11 @@ header {
 
     .dashicons-search {
       font-size: 1.6rem;
-      transition: transform 0.4s ease-in-out;
+      transition: color 0.4s ease;
 
       &:hover {
         cursor: pointer;
-        transform: scale(1.03);
+        color: gainsboro;
       }
     }
   }

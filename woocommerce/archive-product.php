@@ -29,7 +29,7 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
-
+<h1 class="homepage-title">OFFICIAL STORE</h1>
 <?php
 if ( woocommerce_product_loop() ) {
 

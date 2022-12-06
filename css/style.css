@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 * {
   box-sizing: border-box;
-  font-family: "Belleza", sans-serif;
   font-family: "Montserrat", sans-serif;
   color: #383838;
 }
@@ -17,10 +16,9 @@ body.no-scroll {
   overflow: hidden;
 }
 body header {
-  background-color: white;
+  background-color: transparent;
   height: 4.5em;
   width: 100%;
-  box-shadow: 0 3px 3px -1px gray;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -53,32 +51,34 @@ body header .header-wrapper .nav-container .nav-menu-wrapper ul li {
 body header .header-wrapper .nav-container .nav-menu-wrapper ul li a {
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.2s ease;
+  transition: color 0.4s ease;
 }
 body header .header-wrapper .nav-container .nav-menu-wrapper ul li a:hover {
   color: gainsboro;
 }
-body header .header-wrapper .nav-container .nav-menu-wrapper ul li.current_page_item a,
-body header .header-wrapper .nav-container .nav-menu-wrapper ul li.current_page_item span {
-  text-decoration: underline;
-  text-underline-offset: 15px;
-  text-decoration-thickness: 3px;
+body header .header-wrapper .nav-container .nav-menu-wrapper ul li a:hover span {
+  color: gainsboro;
 }
 body header .header-wrapper .nav-container .nav-menu-wrapper ul li .dashicons-cart {
   padding-top: 3px;
 }
 body header .header-wrapper .dashicons-search {
   font-size: 1.6rem;
-  transition: transform 0.4s ease-in-out;
+  transition: color 0.4s ease;
 }
 body header .header-wrapper .dashicons-search:hover {
   cursor: pointer;
-  transform: scale(1.03);
+  color: gainsboro;
 }
 body .content-area {
   min-height: calc(100vh - 4em);
   background: linear-gradient(90deg, rgb(230, 204, 178) 0%, rgb(208, 200, 167) 100%);
   padding: 10em 3em;
+}
+body .content-area .homepage-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Kalam", cursive;
 }
 body .content-area a {
   text-decoration: none;
@@ -173,12 +173,13 @@ body .content-area .product {
   margin-top: 3em;
 }
 body .content-area .product .woocommerce-product-gallery__image {
-  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 body .content-area .product .woocommerce-product-gallery__image a img {
   border-radius: 2px;
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
 }
 body .content-area .product .entry-summary {
   display: flex;
@@ -565,17 +566,15 @@ body .woocommerce .checkout #order_review .place-order button:hover {
   transform: translateY(-2px);
 }
 body footer {
-  background-color: white;
+  background: linear-gradient(90deg, rgb(230, 204, 178) 0%, rgb(208, 200, 167) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2em;
   height: 8em;
-  background-color: whitesmoke;
   padding: 2em;
   width: 100%;
-  box-shadow: 0 -3px 3px gray;
 }
 body footer .sm-icons-footer {
   display: flex;
@@ -587,9 +586,6 @@ body footer .sm-icons-footer a {
 }
 body footer .sm-icons-footer a:hover {
   transform: scale(1.1);
-}
-body footer li a:hover {
-  text-decoration: underline;
 }
 body footer span {
   font-weight: bold;
@@ -738,6 +734,10 @@ body .search-wrapper-hidden.show {
   html header .nav-container .nav-menu-wrapper .menu-top-menu-container ul li:nth-child(2) {
     display: none;
   }
+  html header .nav-container .nav-menu-wrapper .menu-top-menu-container ul li.current_page_item a,
+html header .nav-container .nav-menu-wrapper .menu-top-menu-container ul li.current_page_item span {
+    text-decoration: none;
+  }
   html header .nav-container .nav-menu-wrapper.open {
     transform: translateX(0);
   }
@@ -821,6 +821,9 @@ body .search-wrapper-hidden.show {
   }
   html header .nav-container .hamburger.active:after {
     transform: rotate(-45deg);
+  }
+  html .content-area .homepage-title {
+    margin-bottom: 2em;
   }
   html .woocommerce table thead .product-name {
     display: none;
@@ -940,6 +943,12 @@ body .search-wrapper-hidden.show {
   }
   html header .nav-container .nav-menu-wrapper .menu-top-menu-container ul li:nth-child(2) {
     display: block;
+  }
+  html header .nav-container .nav-menu-wrapper .menu-top-menu-container ul li.current_page_item a,
+html header .nav-container .nav-menu-wrapper .menu-top-menu-container ul li.current_page_item span {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
   }
   html header .nav-container .hamburger {
     display: none;

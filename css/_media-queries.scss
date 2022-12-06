@@ -5,6 +5,12 @@
 
     @import 'components/mobile-menu';
 
+    .content-area {
+      .homepage-title {
+        margin-bottom: 2em;
+      }
+    }
+
     .woocommerce {
       table {
         thead {
@@ -192,6 +198,15 @@
 
                 &:nth-child(2) {
                   display: block;
+                }
+
+                &.current_page_item {
+                  a,
+                  span {
+                    text-decoration: underline;
+                    text-underline-offset: 15px;
+                    text-decoration-thickness: 3px;
+                  }
                 }
               }
             }

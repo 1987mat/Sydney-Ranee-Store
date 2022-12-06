@@ -89,7 +89,6 @@ function add_search_modal() {
 // Add a hidden search modal 
 add_action( 'wp_footer', 'add_search_modal' );
 
-
 function register_search() {
   register_rest_route('store/v1', '/search', [
     'methods'  => WP_REST_SERVER::READABLE,

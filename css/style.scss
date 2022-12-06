@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 @import 'mixins';
 @import 'variables';
 
 * {
   box-sizing: border-box;
-  font-family: 'Belleza', sans-serif;
   font-family: 'Montserrat', sans-serif;
   color: #383838;
-  // border: 1px solid red;
 }
 
 body {
@@ -27,6 +25,12 @@ body {
     min-height: calc(100vh - 4em);
     background: $primary-color;
     padding: 10em 3em;
+
+    .homepage-title {
+      text-align: center;
+      font-size: 3.5rem;
+      font-family: 'Kalam', cursive;
+    }
 
     a {
       text-decoration: none;

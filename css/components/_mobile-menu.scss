@@ -41,6 +41,13 @@ header {
             &:nth-child(2) {
               display: none;
             }
+
+            &.current_page_item {
+              a,
+              span {
+                text-decoration: none;
+              }
+            }
           }
         }
       }
