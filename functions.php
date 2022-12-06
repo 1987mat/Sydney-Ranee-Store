@@ -73,13 +73,13 @@ function add_script_to_footer(){
 // jQuery plus & minus button for quantity input
 add_action( 'wp_footer', 'add_script_to_footer');
 
-
 function add_search_modal() {
 	echo 
   "<div class='search-wrapper-hidden'>
     <div class='search-input-field'>
-      <input type='text' placeholder='Search' class='search-input'>
+      <span class='dashicons dashicons-search placeholder-search-icon'></span>
       <span class='close-icon'>&#10006;</span>
+      <input type='text' placeholder='Search' class='search-input'>
     </div>
     <div class='search-results'>
     </div>

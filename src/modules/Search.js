@@ -1,10 +1,12 @@
 class Search {
   constructor() {
-    this.searchIcon = document.querySelector('.dashicons-search');
+    this.searchIcon = document.querySelector('.search-icon-btn');
     this.searchModal = document.querySelector('.search-wrapper-hidden');
     this.searchInput = document.querySelector('.search-input');
     this.searchResults = document.querySelector('.search-results');
     this.closeIcon = document.querySelector('.close-icon');
+    this.navMenu = document.querySelector('.nav-menu-wrapper');
+    this.hamburger = document.querySelector('.hamburger');
     this.typerTimer;
     this.previousValue;
     this.isSpinnerVisible = false;
@@ -12,38 +14,81 @@ class Search {
   }
 
   events() {
-    this.searchIcon.addEventListener('click', () => {
-      this.searchModal.classList.add('show');
-      this.searchInput.focus();
-    });
+    // Click search icon
+    this.searchIcon.addEventListener(
+      'click',
+      this.openSearchOverlay.bind(this)
+    );
 
-    this.closeIcon.addEventListener('click', () => {
-      this.searchModal.classList.remove('show');
-      this.searchResults.innerHTML = '';
-      this.searchInput.value = '';
-    });
+    // Click close icon
+    this.closeIcon.addEventListener(
+      'click',
+      this.closeSearchOverlay.bind(this)
+    );
 
-    this.searchInput.addEventListener('keyup', () => {
-      if (this.searchInput.value !== this.previousValue) {
-        clearTimeout(this.typerTimer);
+    // Keyboard events
+    document.addEventListener('keyup', this.keyPressed.bind(this));
 
-        if (this.searchInput.value) {
-          this.typerTimer = setTimeout(this.displayResults.bind(this), 500);
+    // Typing events
+    this.searchInput.addEventListener('keyup', this.handleTyping.bind(this));
+  }
 
-          // Display loading spinner
-          if (!this.isSpinnerVisible) {
-            this.searchResults.innerHTML = '<div class="spinner"></div>';
-            this.isSpinnerVisible = true;
-          }
-        } else {
-          this.isSpinnerVisible = false;
-          this.searchInput.value = '';
-          this.searchResults.innerHTML = '';
+  // METHODS
+  openSearchOverlay() {
+    this.searchModal.classList.add('show');
+    this.searchInput.focus();
+  }
+
+  closeSearchOverlay() {
+    if (this.navMenu.classList.contains('open')) {
+      this.navMenu.classList.remove('open');
+      this.hamburger.classList.remove('active');
+    }
+
+    this.searchModal.classList.remove('show');
+    this.searchInput.blur();
+    this.searchResults.innerHTML = '';
+    this.searchInput.value = '';
+  }
+
+  keyPressed(e) {
+    let key = e.key;
+
+    // Open overlay
+    if (
+      key === 's' &&
+      !this.searchModal.classList.contains('show') &&
+      !document.querySelector('input:focus, textarea:focus')
+    ) {
+      this.openSearchOverlay();
+    }
+
+    // Close overlay
+    if (key === 'Escape' && this.searchModal.classList.contains('show')) {
+      this.closeSearchOverlay();
+    }
+  }
+
+  handleTyping() {
+    if (this.searchInput.value !== this.previousValue) {
+      clearTimeout(this.typerTimer);
+
+      if (this.searchInput.value) {
+        this.typerTimer = setTimeout(this.displayResults.bind(this), 500);
+
+        // Display loading spinner
+        if (!this.isSpinnerVisible) {
+          this.searchResults.innerHTML = '<div class="spinner"></div>';
+          this.isSpinnerVisible = true;
         }
+      } else {
+        this.isSpinnerVisible = false;
+        this.searchInput.value = '';
+        this.searchResults.innerHTML = '';
       }
+    }
 
-      this.previousValue = this.searchInput.value;
-    });
+    this.previousValue = this.searchInput.value;
   }
 
   displayResults() {
@@ -55,7 +100,7 @@ class Search {
       .then((response) => response.json())
       .then((results) => {
         this.searchResults.innerHTML = `
-          ${results.length ? '<ul>' : '<p>No information found.</p>'}
+          ${results.length ? '<ul>' : '<p>No product found.</p>'}
           ${results
             .map(
               (product) => `

@@ -1,8 +1,15 @@
 .product {
   margin-top: 3em;
 
-  img {
-    border-radius: 2px;
+  .woocommerce-product-gallery__image {
+    width: 100vw;
+    a {
+      img {
+        border-radius: 2px;
+        width: 70%;
+        height: 70%;
+      }
+    }
   }
 
   .entry-summary {
@@ -12,7 +19,7 @@
 
     form {
       display: flex;
-      width: 60%;
+      width: fit-content;
       gap: 2em;
 
       @include inputNumber(0);

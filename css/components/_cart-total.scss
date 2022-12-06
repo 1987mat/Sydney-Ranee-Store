@@ -33,19 +33,21 @@
           padding: 1em;
 
           .woocommerce-shipping-calculator {
+            width: 100%;
             display: flex;
+            flex-direction: column;
             gap: 2em;
 
             .shipping-calculator-form {
-              p {
-                width: 12em;
-              }
+              width: 100%;
+              padding: 0.5em;
 
               input,
               button {
                 border: none;
                 padding: 0.5em;
                 border-radius: 2px;
+                width: 100%;
               }
             }
           }

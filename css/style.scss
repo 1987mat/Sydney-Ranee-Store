@@ -7,7 +7,8 @@
   box-sizing: border-box;
   font-family: 'Belleza', sans-serif;
   font-family: 'Montserrat', sans-serif;
-  color: #282828;
+  color: #383838;
+  // border: 1px solid red;
 }
 
 body {
@@ -15,6 +16,10 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 
   @import 'components/header';
 
@@ -70,12 +75,13 @@ body {
 
   .woocommerce {
     min-height: calc(100vh - 4em);
+    width: 100vw;
     background: linear-gradient(
       90deg,
       rgba(230, 204, 178, 1) 0%,
       rgba(208, 200, 167, 1) 100%
     );
-    padding: 6em 2em;
+    padding: 8em 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,3 +94,5 @@ body {
   @import 'components/footer';
   @import 'components/search-form';
 }
+
+@import 'media-queries';

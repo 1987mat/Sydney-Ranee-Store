@@ -1,0 +1,286 @@
+/* MOBILE */
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50%;
+
+    @import 'components/mobile-menu';
+
+    .woocommerce {
+      table {
+        thead {
+          .product-name {
+            display: none;
+          }
+        }
+
+        tbody {
+          .product-name {
+            display: none;
+          }
+        }
+      }
+
+      .actions {
+        #update-cart-btn {
+          margin-top: 4em;
+          float: none;
+        }
+      }
+
+      .cart-collaterals {
+        table {
+          td {
+            max-width: 5em;
+          }
+        }
+      }
+
+      .checkout {
+        #customer_details {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .search-wrapper-hidden {
+      .search-input-field {
+        .placeholder-search-icon {
+          position: absolute;
+          left: 0;
+          top: 10px;
+          font-size: 3rem;
+          color: lightgray;
+          margin-left: 1em;
+        }
+
+        .close-icon {
+          position: absolute;
+          top: 0;
+          right: -10px;
+          font-size: 2rem;
+          opacity: 1;
+          transition: opacity 0.4s ease-in;
+        }
+
+        input {
+          font-size: 2.5rem;
+          padding: 0.5em 0.5em 0.5em 2.2em;
+        }
+      }
+    }
+  }
+}
+
+/* MOBILE LANDSCAPE */
+@media screen and (min-width: 480px) {
+  html {
+    .search-wrapper-hidden {
+      .search-input-field {
+        .placeholder-search-icon {
+          left: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  html {
+    font-size: 80%;
+
+    header {
+      .nav-container {
+        .dashicons-search {
+          right: 150px;
+        }
+
+        .cart-link {
+          right: 95px;
+        }
+
+        .hamburger {
+          right: 20px;
+          top: 15px;
+        }
+      }
+    }
+
+    .search-wrapper-hidden {
+      .search-input-field {
+        .placeholder-search-icon {
+          top: 15px;
+          margin-left: 1em;
+        }
+
+        .close-icon {
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+// IPAD PRO 10.5"
+@media screen and (min-width: 834px) and (orientation: portrait) {
+  html {
+    .search-wrapper-hidden {
+      .search-input-field {
+        .placeholder-search-icon {
+          font-size: 3.5rem;
+          top: 35px;
+          margin-left: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    .search-wrapper-hidden {
+      .search-input-field {
+        .placeholder-search-icon {
+          top: 10px;
+          left: 30px;
+        }
+      }
+    }
+  }
+}
+
+/* DESKTOP & TABLET LANDSCAPE */
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 90%;
+
+    header {
+      .header-wrapper {
+        a {
+          width: 8em;
+          left: 200px;
+
+          .logo {
+            width: 100%;
+          }
+        }
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+
+        .nav-menu-wrapper {
+          background-color: initial;
+          position: relative;
+          height: auto;
+          left: 430px;
+          width: fit-content;
+
+          .menu-top-menu-container {
+            ul {
+              flex-direction: row;
+              gap: 2em;
+
+              li {
+                a {
+                  font-size: 1.2rem;
+                }
+
+                &:nth-child(2) {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+
+        .hamburger {
+          display: none;
+        }
+
+        .cart-link {
+          display: none;
+        }
+
+        .dashicons-search {
+          position: relative;
+          right: 0;
+          top: 0;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .search-wrapper-hidden {
+      .search-input-field {
+        .placeholder-search-icon {
+          top: 8px;
+        }
+
+        input {
+          font-size: 2rem;
+          padding: 0.5em 0.5em 0.5em 2.8em;
+        }
+      }
+    }
+  }
+}
+
+// IPAD PRO 12.9"
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+  html {
+    .search-wrapper-hidden {
+      .search-input-field {
+        .placeholder-search-icon {
+          font-size: 3.5rem;
+          top: 8px;
+          margin-left: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 100%;
+
+    header {
+      .nav-container {
+        .nav-menu-wrapper {
+          left: 470px;
+        }
+      }
+    }
+
+    .search-wrapper-hidden {
+      .search-input-field {
+        .placeholder-search-icon {
+          top: 15px;
+          left: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2160px) {
+  html {
+    .content-area {
+      padding: 10em;
+    }
+
+    .search-wrapper-hidden {
+      .search-input-field {
+        .placeholder-search-icon {
+          left: 100px;
+        }
+      }
+    }
+  }
+}
