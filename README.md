@@ -14,6 +14,8 @@
 
 ## Built With
 
+- Wordpress
+- WooCommerce
 - HTML
 - SCSS
 - JavaScript
