@@ -6,7 +6,7 @@
 
 - [Repo](https://github.com/1987mat/Sydney-Ranee-Store 'Repo')
 
-<!-- - [Live](<Homepage url> 'Live View') -->
+- [Live](https://sydneyraneeshop.com 'Live View')
 
 ## Screenshots
 

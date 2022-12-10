@@ -97,6 +97,11 @@ body {
 
   @import 'components/footer';
   @import 'components/search-form';
+
+  /* Remove sidebar single product page */
+  #sidebar {
+    display: none;
+  }
 }
 
 @import 'media-queries';

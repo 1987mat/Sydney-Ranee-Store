@@ -12,10 +12,12 @@ header {
   }
 
   .header-wrapper {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 3em;
+    padding-top: 0.5em;
 
     .nav-container {
       .nav-menu-wrapper {
@@ -27,7 +29,6 @@ header {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 3em;
 
           li {
             list-style-type: none;

@@ -264,21 +264,6 @@ const hideNavbarScroll = new _modules_HideNavbarScroll__WEBPACK_IMPORTED_MODULE_
 const search = new _modules_Search__WEBPACK_IMPORTED_MODULE_1__["default"]();
 const mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_2__["default"]();
 (0,_modules_animationOnScroll__WEBPACK_IMPORTED_MODULE_3__.animationOnScroll)();
-
-// const elements = document.querySelectorAll('.type-product');
-// const observer = new IntersectionObserver(
-//   (entries) => {
-//     entries.forEach((entry) => {
-//       entry.target.classList.toggle('fade-in', entry.isIntersecting);
-//       if (entry.isIntersecting) observer.unobserve(entry.target);
-//     });
-//   },
-//   { treshold: 0.7 }
-// );
-
-// [...elements].forEach((el) => {
-//   observer.observe(el);
-// });
 }();
 /******/ })()
 ;

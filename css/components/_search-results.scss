@@ -27,7 +27,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 4em;
+    align-items: center;
+    gap: 3em;
+    padding: 0;
+    margin: 0;
 
     li {
       list-style-type: none;

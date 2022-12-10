@@ -10,7 +10,7 @@
 <body <?php body_class();?>>
   <header>
     <div class="header-wrapper">
-      <a href="<?php echo site_url('');?>"><img src=<?php echo get_template_directory_uri() . '/images/logo.png';?> class="logo"></a>
+      <a href="<?php echo site_url('');?>" class="logo"><img src=<?php echo get_template_directory_uri() . '/images/logo.png';?> ></a>
       <div class="nav-container">
         <div class="nav-menu-wrapper">
           <?php 
