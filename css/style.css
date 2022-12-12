@@ -39,10 +39,10 @@ body header .header-wrapper .nav-container .nav-menu-wrapper ul li a {
   transition: color 0.4s ease;
 }
 body header .header-wrapper .nav-container .nav-menu-wrapper ul li a:hover {
-  color: gainsboro;
+  color: whitesmoke;
 }
 body header .header-wrapper .nav-container .nav-menu-wrapper ul li a:hover span {
-  color: gainsboro;
+  color: whitesmoke;
 }
 body header .header-wrapper .dashicons-search {
   transition: color 0.4s ease;
@@ -229,6 +229,32 @@ body .content-area .product .entry-summary .product_meta {
 }
 body .content-area .product .tabs {
   display: none;
+}
+body .content-area #content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  padding: 0 2em;
+}
+body .content-area #content .page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .content-area #content .page-content h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #282828;
+}
+body .content-area #content .page-content a {
+  color: #282828;
+  text-decoration: underline;
+}
+body .content-area #content img {
+  width: 55%;
 }
 body .woocommerce {
   min-height: calc(100vh - 4em);
