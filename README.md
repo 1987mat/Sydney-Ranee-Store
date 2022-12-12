@@ -1,6 +1,6 @@
 # Sydney Ranee` Store
 
-<p>WooCommerce store.</p>
+<p>Sydney Ranee` official store. Developed with Wordpress / WooCommerce. </p>
 
 ## Links
 
@@ -10,16 +10,16 @@
 
 ## Screenshots
 
-<!-- <img src="" width="400"/> -->
+<img src="https://user-images.githubusercontent.com/64235918/206940846-55ad173b-e9a2-4d21-9a34-835309ca0200.png" width="400"/>
 
 ## Built With
 
-- Wordpress
-- WooCommerce
 - HTML
 - SCSS
 - JavaScript
 - PHP
+- Wordpress
+- WooCommerce
 
 ## Author
 

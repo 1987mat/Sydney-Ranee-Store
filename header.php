@@ -18,7 +18,17 @@
           ?>
         </div>
         <span class="dashicons dashicons-search search-icon-btn"></span>
-        <a href="<?php echo site_url('/cart');?>" class="cart-link"><span class="dashicons dashicons-cart"></span></a>
+        <!-- Get cart product quantity -->
+        <?php 
+          global $woocommerce;
+          $productCount = WC()->cart->get_cart_contents_count();
+        ?>
+        <a href="<?php echo site_url('/cart');?>" class="cart-icon-link">
+          <div class="cart-icon-wrapper">
+            <span class="dashicons dashicons-cart"></span>
+            <span class="product-count"><?php echo $productCount;?></span>
+          </div>
+        </a>
         <div class="hamburger">
           <div></div>
         </div>

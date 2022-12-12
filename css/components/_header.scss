@@ -1,5 +1,4 @@
 header {
-  background-color: transparent;
   height: 4.5em;
   width: 100%;
   position: fixed;
@@ -13,25 +12,11 @@ header {
 
   .header-wrapper {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 3em;
-    padding-top: 0.5em;
 
     .nav-container {
       .nav-menu-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
         ul {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
           li {
-            list-style-type: none;
             font-size: 1.3rem;
 
             a {
@@ -49,17 +34,12 @@ header {
                 }
               }
             }
-
-            .dashicons-cart {
-              padding-top: 3px;
-            }
           }
         }
       }
     }
 
     .dashicons-search {
-      font-size: 1.6rem;
       transition: color 0.4s ease;
 
       &:hover {

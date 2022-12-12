@@ -8,8 +8,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2em;
-  height: 8em;
+  gap: 1.5em;
+  height: fit-content;
   padding: 2em;
   width: 100%;
 
@@ -29,5 +29,14 @@ footer {
 
   span {
     font-weight: bold;
+  }
+
+  .privacy-policy-link {
+    text-decoration: none;
+    transition: color 0.4s ease;
+
+    &:hover {
+      color: gainsboro;
+    }
   }
 }

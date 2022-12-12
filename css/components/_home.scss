@@ -14,7 +14,7 @@
     transform: translateY(0);
     transition: transform 0.8s ease;
 
-    // Fade in on scroll
+    // Animate on scroll
     &.fade-in {
       transform: translateY(-80px);
     }

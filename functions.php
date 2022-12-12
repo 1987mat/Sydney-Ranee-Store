@@ -121,3 +121,19 @@ function search_results( $data ) {
 }
 
 add_action('rest_api_init', 'register_search');
+
+
+function woocommerce_add_to_cart( $fragments ) {
+	global $woocommerce;
+
+	ob_start();
+
+	?>
+  <span class="product-count"><?php echo $woocommerce->cart->cart_contents_count;?></span>
+	<?php
+	$fragments['.product-count'] = ob_get_clean();
+	return $fragments;
+}
+
+// AJAX update cart product count
+add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_add_to_cart' );
