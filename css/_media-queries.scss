@@ -1,7 +1,7 @@
 /* MOBILE */
 @media screen and (min-width: 320px) {
   html {
-    font-size: 50%;
+    font-size: 60%;
 
     @import 'components/mobile-menu';
 
@@ -9,8 +9,71 @@
       .homepage-title {
         margin-bottom: 2em;
       }
+
+      /* Home page products */
+      .products {
+        gap: 10em;
+
+        li {
+          .price,
+          .wp-element-button {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      /* Single product page */
+      .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .entry-summary {
+          justify-content: center;
+          align-items: center;
+          gap: 3em;
+
+          .price,
+          .wp-element-button {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+
+          .quantity {
+            input {
+              font-size: 2.5rem;
+            }
+          }
+
+          form {
+            gap: 2em;
+          }
+        }
+
+        .related {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h2 {
+            font-size: 3rem;
+            text-transform: capitalize;
+          }
+
+          .woocommerce-LoopProduct-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3em;
+          }
+        }
+      }
     }
 
+    /* Cart page */
     .woocommerce {
       table {
         thead {
@@ -23,31 +86,66 @@
           .product-name {
             display: none;
           }
+
+          .product-quantity {
+            .quantity {
+              input {
+                font-size: 1.8rem;
+              }
+            }
+          }
         }
       }
 
       .actions {
+        label {
+          font-size: 1.5rem;
+        }
+
+        .input-text,
+        .submit {
+          font-size: 1.8rem;
+          box-shadow: 0 0 6px gray;
+        }
+
+        .wp-element-button {
+          font-size: 1.8rem;
+        }
+
         #update-cart-btn {
           margin-top: 4em;
           float: none;
+          font-size: 1.8rem;
         }
       }
 
       .cart-collaterals {
+        h2 {
+          font-size: 3rem;
+        }
+
         table {
           td {
             max-width: 5em;
           }
         }
+
+        .wc-proceed-to-checkout {
+          font-size: 2rem;
+          text-transform: capitalize;
+        }
       }
 
       .checkout {
+        font-size: 1.2rem;
+
         #customer_details {
           flex-direction: column;
         }
       }
     }
 
+    /* Search overlay */
     .search-wrapper-hidden {
       .search-input-field {
         .placeholder-search-icon {
@@ -111,17 +209,19 @@
 /* TABLET */
 @media screen and (min-width: 768px) and (orientation: portrait) {
   html {
-    font-size: 80%;
+    font-size: 100%;
 
     header {
       .header-wrapper {
         .nav-container {
           .dashicons-search {
-            right: 175px;
+            right: 205px;
+            top: 8px;
           }
 
           .cart-icon-link {
-            right: 72px;
+            right: 80px;
+            top: 10px;
 
             .cart-icon-wrapper {
               gap: 2em;
@@ -129,8 +229,33 @@
           }
 
           .hamburger {
-            right: 20px;
-            top: 10px;
+            right: 15px;
+            top: 14px;
+          }
+        }
+      }
+    }
+
+    .content-area {
+      .products {
+        li {
+          img {
+            width: 40em;
+            height: 40em;
+          }
+        }
+      }
+
+      .product {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        .entry-summary {
+          li {
+            .price,
+            .wp-element-button {
+              font-size: 5rem;
+            }
           }
         }
       }
@@ -196,8 +321,6 @@
 /* DESKTOP & TABLET LANDSCAPE */
 @media screen and (min-width: 992px) {
   html {
-    font-size: 90%;
-
     header {
       box-shadow: none;
       background-color: transparent;
@@ -227,7 +350,7 @@
             .menu-top-menu-container {
               ul {
                 flex-direction: row;
-                gap: 4em;
+                gap: 8em;
 
                 li {
                   a {
@@ -252,10 +375,90 @@
 
           .dashicons-search {
             position: relative;
-            right: 50px;
-            top: 14px;
+            right: 30px;
+            top: 11px;
             font-size: 1.5rem;
           }
+        }
+      }
+    }
+
+    .content-area {
+      .products {
+        gap: 6em;
+
+        li {
+          .price,
+          .wp-element-button {
+            font-size: initial;
+          }
+        }
+      }
+
+      .product {
+        .entry-summary {
+          gap: 3em;
+
+          .price,
+          .wp-element-button {
+            font-size: initial;
+          }
+
+          .quantity {
+            input {
+              font-size: initial;
+            }
+          }
+
+          form {
+            gap: 2em;
+          }
+        }
+
+        .related {
+          h2 {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+
+    /* Cart page */
+    .woocommerce {
+      table {
+        tbody {
+          .product-quantity {
+            .quantity {
+              input {
+                font-size: initial;
+              }
+            }
+          }
+        }
+      }
+
+      .actions {
+        label {
+          font-size: initial;
+        }
+
+        .input-text,
+        .submit {
+          font-size: initial;
+        }
+
+        .wp-element-button {
+          font-size: initial;
+        }
+
+        #update-cart-btn {
+          font-size: 1.2rem;
+        }
+      }
+
+      .cart-collaterals {
+        .wc-proceed-to-checkout {
+          font-size: 1.5rem;
         }
       }
     }
@@ -304,18 +507,15 @@
 
         .nav-container {
           .nav-menu-wrapper {
-            left: 300px;
+            left: 370px;
           }
+
           .dashicons-search {
-            right: 70px;
+            right: 75px;
             top: 17px;
           }
         }
       }
-    }
-
-    main {
-      margin-top: -1em;
     }
 
     .search-wrapper-hidden {
@@ -331,8 +531,25 @@
 
 @media screen and (min-width: 2074px) {
   html {
-    .content-area {
-      padding: 10em;
+    font-size: 120%;
+
+    header {
+      .header-wrapper {
+        .nav-container {
+          .dashicons-search {
+            right: 190px;
+            top: 20px;
+          }
+
+          .nav-menu-wrapper {
+            .menu-top-menu-container {
+              ul {
+                gap: 7em;
+              }
+            }
+          }
+        }
+      }
     }
 
     .search-wrapper-hidden {
@@ -347,6 +564,16 @@
 
 @media screen and (min-width: 2559px) {
   html {
+    header {
+      .header-wrapper {
+        .nav-container {
+          .dashicons-search {
+            right: 100px;
+          }
+        }
+      }
+    }
+
     .search-wrapper-hidden {
       .search-input-field {
         .placeholder-search-icon {

@@ -1,5 +1,5 @@
 .product {
-  margin-top: 3em;
+  margin-top: 5em;
 
   .woocommerce-product-gallery__image {
     display: flex;
@@ -17,12 +17,10 @@
   .entry-summary {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
 
     form {
       display: flex;
       width: fit-content;
-      gap: 2em;
 
       @include inputNumber(0);
 
@@ -37,7 +35,7 @@
     }
   }
 
-  .tabs {
+  .woocommerce-tabs {
     display: none;
   }
 }
