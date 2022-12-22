@@ -18,7 +18,12 @@
     display: flex;
     flex-direction: column;
 
-    form {
+    .price {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .cart {
       display: flex;
       width: fit-content;
 
@@ -27,6 +32,7 @@
       .wp-element-button {
         @include button();
         margin: 0;
+        font-size: 1rem;
       }
     }
 

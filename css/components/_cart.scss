@@ -2,13 +2,13 @@ a {
   color: #282828;
 }
 
-form {
+.woocommerce-cart-form {
   margin: 2em 0;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2px;
+  width: 90vw;
 
   table {
     padding: 2em 0;
@@ -105,9 +105,8 @@ form {
         }
 
         #update-cart-btn {
-          width: 15em;
+          width: 12em;
           padding: 1em;
-          float: right;
           font-weight: bold;
 
           &.active {

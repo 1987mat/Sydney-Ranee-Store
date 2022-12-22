@@ -24,11 +24,12 @@
   background-color: rgba(245, 245, 245, 0.3);
   border-radius: 5px;
   box-shadow: 0 0 6px gray;
-  width: 70vw;
+  width: 90%;
 
-  h3 {
-    margin-bottom: 2em;
-    font-size: 1.5rem;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
 
   #customer_details {
@@ -39,11 +40,19 @@
     width: 100%;
 
     .woocommerce-billing-fields,
-    .woocommerce-shipping-fields__field-wrapper {
+    .woocommerce-shipping-fields {
+      h3 {
+        margin-bottom: 4em;
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
       .form-row {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
 
         label {
           margin-bottom: 0.5em;
@@ -61,41 +70,96 @@
           border-left: none;
           background-color: transparent;
           outline: none;
+          width: 100%;
+          -webkit-appearance: none;
+          appearance: none;
         }
       }
     }
 
-    .notes {
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
+    .woocommerce-additional-fields {
+      width: 100%;
 
-      textarea {
-        width: 100%;
-        height: 8em;
-        padding: 0.5em;
-        resize: none;
-        border-radius: 2px;
-        border: none;
+      .notes {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        textarea {
+          width: 100%;
+          height: 8em;
+          padding: 0.5em;
+          resize: none;
+          border-radius: 2px;
+          border: none;
+        }
       }
     }
   }
 
+  h3 {
+    margin-bottom: 2em;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+
   #order_review {
-    .place-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      background-color: rgba(245, 245, 245, 0.3);
+      border-radius: 5px;
+      box-shadow: 0 0 6px gray;
+
+      tr,
+      th,
+      td {
+        border: 0.5px solid;
+        text-align: center;
+        padding: 1em;
+      }
+
+      th {
+        text-transform: uppercase;
+      }
+    }
+
+    .woocommerce-checkout-payment {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 3em;
 
-      button {
-        @include button();
-        font-weight: bold;
-        font-size: 1.2rem;
-        width: 20em;
-        background-color: $secondary-color;
-        box-shadow: 0 3px 2px -2px gray;
+      li {
+        text-align: center;
+      }
+
+      .place-order {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+
+        p {
+          text-align: center;
+        }
+
+        button {
+          @include button();
+          font-weight: bold;
+          width: 20em;
+          background-color: $secondary-color;
+          box-shadow: 0 3px 2px -2px gray;
+          padding: 1em;
+        }
       }
     }
   }
