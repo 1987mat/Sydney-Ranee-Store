@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80vw;
 
     ul {
       list-style-type: none;
@@ -21,7 +20,7 @@
     }
 
     table {
-      width: 90%;
+      width: 80vw;
       background-color: rgba(245, 245, 245, 0.3);
       border-radius: 5px;
       box-shadow: 0 0 6px gray;
@@ -85,7 +84,6 @@
         text-decoration: none;
         background-color: $secondary-color;
         padding: 1em;
-        width: 15em;
         font-weight: bold;
         border-radius: 5px;
         box-shadow: 0 3px 2px -2px gray;

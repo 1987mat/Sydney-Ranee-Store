@@ -41,7 +41,8 @@
     }
 
     img {
-      border-radius: 2px;
+      border-radius: 5px;
+      box-shadow: 0 0 8px gray;
       transition: transform 0.8s ease;
 
       &:hover {

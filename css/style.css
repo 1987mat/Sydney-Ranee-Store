@@ -141,7 +141,8 @@ body .content-area .products li .wp-element-button:hover {
   transform: translateY(-2px);
 }
 body .content-area .products li img {
-  border-radius: 2px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px gray;
   transition: transform 0.8s ease;
 }
 body .content-area .products li img:hover {
@@ -159,7 +160,8 @@ body .content-area .product .woocommerce-product-gallery__image {
   justify-content: center;
 }
 body .content-area .product .woocommerce-product-gallery__image a img {
-  border-radius: 2px;
+  box-shadow: 0 0 8px gray;
+  border-radius: 5px;
   width: 100%;
   height: 100%;
 }
@@ -288,6 +290,7 @@ body .woocommerce .woocommerce-cart-form table {
   background-color: rgba(245, 245, 245, 0.3);
   border-radius: 5px;
   box-shadow: 0 0 6px gray;
+  width: 80vw;
 }
 body .woocommerce .woocommerce-cart-form table tbody a {
   text-decoration: none;
@@ -399,7 +402,7 @@ body .woocommerce .woocommerce-cart-form table tbody tr #update-cart-btn.active 
 }
 body .woocommerce hr {
   margin-top: 4em;
-  width: 80%;
+  width: 80vw;
   border: 0.5px solid gray;
 }
 body .woocommerce .cart-collaterals {
@@ -410,7 +413,6 @@ body .woocommerce .cart-collaterals .cart_totals {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vw;
 }
 body .woocommerce .cart-collaterals .cart_totals ul {
   list-style-type: none;
@@ -423,7 +425,7 @@ body .woocommerce .cart-collaterals .cart_totals h2 {
   text-transform: capitalize;
 }
 body .woocommerce .cart-collaterals .cart_totals table {
-  width: 90%;
+  width: 80vw;
   background-color: rgba(245, 245, 245, 0.3);
   border-radius: 5px;
   box-shadow: 0 0 6px gray;
@@ -486,7 +488,6 @@ body .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a {
   text-decoration: none;
   background-color: rgba(245, 245, 245, 0.6);
   padding: 1em;
-  width: 15em;
   font-weight: bold;
   border-radius: 5px;
   box-shadow: 0 3px 2px -2px gray;
@@ -578,6 +579,7 @@ body .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
+  border-radius: 0;
 }
 body .woocommerce .checkout #customer_details .woocommerce-additional-fields {
   width: 100%;
@@ -978,24 +980,32 @@ html .content-area .products li .wp-element-button {
     justify-content: center;
     align-items: center;
   }
+  html .content-area .product .woocommerce-product-gallery__image {
+    display: flex;
+    justify-content: center;
+  }
+  html .content-area .product .woocommerce-product-gallery__image a img {
+    width: 25em;
+    height: 25em;
+  }
   html .content-area .product .entry-summary {
     justify-content: center;
     align-items: center;
     gap: 3em;
   }
+  html .content-area .product .entry-summary .price {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
   html .content-area .product .entry-summary .cart {
     gap: 1em;
   }
-  html .content-area .product .entry-summary .cart .price {
-    font-weight: bold;
-    font-size: 2rem;
+  html .content-area .product .entry-summary .cart input {
+    font-size: 1.5rem;
   }
   html .content-area .product .entry-summary .cart .wp-element-button {
-    font-size: 2rem;
     font-weight: bold;
-  }
-  html .content-area .product .entry-summary .cart .quantity input {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   html .content-area .product .related {
     display: flex;
@@ -1006,6 +1016,7 @@ html .content-area .products li .wp-element-button {
   html .content-area .product .related h2 {
     font-size: 3rem;
     text-transform: capitalize;
+    margin-bottom: -2em;
   }
   html .content-area .product .related .woocommerce-LoopProduct-link {
     display: flex;
@@ -1013,6 +1024,16 @@ html .content-area .products li .wp-element-button {
     justify-content: center;
     align-items: center;
     gap: 3em;
+  }
+  html .content-area .product .related .woocommerce-LoopProduct-link img {
+    width: 25em;
+    height: 25em;
+  }
+  html .content-area .product .related .woocommerce-LoopProduct-link .price {
+    font-size: 1.5rem;
+  }
+  html .content-area .product .related .wp-element-button {
+    font-size: 1.5rem;
   }
   html .woocommerce {
     /* Checkout Page */
@@ -1023,24 +1044,16 @@ html .content-area .products li .wp-element-button {
   html .woocommerce .woocommerce-cart-form tbody .product-name {
     display: none;
   }
-  html .woocommerce .woocommerce-cart-form tbody .product-quantity .quantity input {
-    font-size: 1.8rem;
-  }
   html .woocommerce .actions label {
     font-size: 1.5rem;
   }
   html .woocommerce .actions .input-text,
 html .woocommerce .actions .submit {
-    font-size: 1.8rem;
     box-shadow: 0 0 6px gray;
-  }
-  html .woocommerce .actions .wp-element-button {
-    font-size: 1.8rem;
   }
   html .woocommerce .actions #update-cart-btn {
     margin-top: 4em;
     float: none;
-    font-size: 1.8rem;
   }
   html .woocommerce .cart-collaterals h2 {
     font-size: 3rem;
@@ -1049,7 +1062,7 @@ html .woocommerce .actions .submit {
     max-width: 5em;
   }
   html .woocommerce .cart-collaterals .wc-proceed-to-checkout {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   html .woocommerce .checkout #customer_details {
     flex-direction: column;
@@ -1090,7 +1103,7 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
   html {
-    font-size: 100%;
+    font-size: 90%;
   }
   html header .header-wrapper .nav-container .dashicons-search {
     right: 205px;
@@ -1108,8 +1121,12 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
     top: 14px;
   }
   html .content-area .products li img {
-    width: 40em;
-    height: 40em;
+    width: 30em;
+    height: 30em;
+  }
+  html .content-area .products li .price,
+html .content-area .products li .wp-element-button {
+    font-size: 1rem;
   }
   html .content-area .product {
     flex-direction: column;
@@ -1117,7 +1134,7 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
   }
   html .content-area .product .entry-summary li .price,
 html .content-area .product .entry-summary li .wp-element-button {
-    font-size: initial;
+    font-size: 1rem;
   }
   html .woocommerce .checkout #customer_details .woocommerce-billing-fields .form-row,
 html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form-row {
@@ -1138,6 +1155,7 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
 }
 @media screen and (min-width: 992px) {
   html {
+    font-size: 100%;
     /* Cart page */
   }
   html header {
@@ -1161,7 +1179,7 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
   html header .header-wrapper .nav-container .nav-menu-wrapper {
     background-color: initial;
     position: relative;
-    left: 290px;
+    left: 360px;
     height: auto;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -1169,7 +1187,7 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
   }
   html header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul {
     flex-direction: row;
-    gap: 8em;
+    gap: 7em;
   }
   html header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li a {
     font-size: 1.2rem;
@@ -1185,8 +1203,8 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
   }
   html header .header-wrapper .nav-container .dashicons-search {
     position: relative;
-    right: 30px;
-    top: 11px;
+    right: 65px;
+    top: 18px;
     font-size: 1.5rem;
   }
   html .content-area .products {
@@ -1242,24 +1260,14 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
     font-size: 2rem;
   }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
-    top: 13px;
-    left: 40px;
+    top: 22px;
+    left: 30px;
   }
   html .search-wrapper-hidden .search-input-field .close-icon {
     right: 10px;
   }
 }
 @media screen and (min-width: 1023px) and (orientation: portrait) {
-  html header .header-wrapper .nav-container .nav-menu-wrapper {
-    left: 340px;
-  }
-  html header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul {
-    gap: 5em;
-  }
-  html header .header-wrapper .nav-container .dashicons-search {
-    right: 50px;
-    top: 17px;
-  }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
     top: 22px;
     left: 30px;
@@ -1269,19 +1277,12 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
   }
 }
 @media screen and (min-width: 1200px) {
-  html {
-    font-size: 100%;
-  }
   html header .header-wrapper .logo {
     left: 25px;
     top: 12px;
   }
-  html header .header-wrapper .nav-container .nav-menu-wrapper {
-    left: 370px;
-  }
   html header .header-wrapper .nav-container .dashicons-search {
-    right: 80px;
-    top: 17px;
+    right: 70px;
   }
   html .content-area .product .entry-summary {
     gap: 3em;
@@ -1290,7 +1291,6 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
     font-size: initial;
   }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
-    top: 15px;
     left: 40px;
   }
 }
@@ -1299,11 +1299,11 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
     font-size: 120%;
   }
   html header .header-wrapper .nav-container .dashicons-search {
-    right: 130px;
+    right: 200px;
     top: 20px;
   }
   html header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul {
-    gap: 7em;
+    gap: 8em;
   }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
     left: 70px;
@@ -1312,10 +1312,9 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
 }
 @media screen and (min-width: 2559px) {
   html header .header-wrapper .nav-container .dashicons-search {
-    right: 100px;
+    right: 180px;
   }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
     left: 100px;
-    top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
