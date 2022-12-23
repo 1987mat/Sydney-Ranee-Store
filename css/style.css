@@ -884,9 +884,9 @@ html header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-cont
   }
   html header .header-wrapper .nav-container .dashicons-search {
     position: absolute;
-    right: 115px;
-    top: 6px;
-    font-size: 3.5rem;
+    right: 113px;
+    top: 7.5px;
+    font-size: 3.2rem;
   }
   html header .header-wrapper .nav-container .cart-icon-link {
     text-decoration: none;
@@ -1106,8 +1106,8 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
     font-size: 90%;
   }
   html header .header-wrapper .nav-container .dashicons-search {
-    right: 185px;
-    top: 8px;
+    right: 190px;
+    top: 10px;
   }
   html header .header-wrapper .nav-container .cart-icon-link {
     right: 80px;
@@ -1118,7 +1118,7 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
   }
   html header .header-wrapper .nav-container .hamburger {
     right: 15px;
-    top: 14px;
+    top: 13px;
   }
   html .content-area .products li img {
     width: 30em;
