@@ -1203,7 +1203,7 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
   }
   html header .header-wrapper .nav-container .dashicons-search {
     position: relative;
-    right: 65px;
+    right: 70px;
     top: 18px;
     font-size: 1.5rem;
   }
@@ -1312,7 +1312,7 @@ html .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form
 }
 @media screen and (min-width: 2559px) {
   html header .header-wrapper .nav-container .dashicons-search {
-    right: 180px;
+    right: 150px;
   }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
     left: 100px;
