@@ -11,6 +11,7 @@ header {
 
       img {
         width: 100%;
+        height: auto;
       }
     }
 
@@ -92,8 +93,8 @@ header {
       .cart-icon-link {
         text-decoration: none;
         position: absolute;
-        right: 50px;
-        top: 7px;
+        right: 48px;
+        top: 7.5px;
 
         .cart-icon-wrapper {
           display: flex;

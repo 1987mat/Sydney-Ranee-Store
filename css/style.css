@@ -814,7 +814,7 @@ body #sidebar {
 
 @media screen and (min-width: 320px) {
   html {
-    font-size: 60%;
+    font-size: 65%;
     /* Cart page */
     /* Search overlay */
   }
@@ -830,6 +830,7 @@ body #sidebar {
   }
   html header .header-wrapper .logo img {
     width: 100%;
+    height: auto;
   }
   html header .header-wrapper .nav-container .nav-menu-wrapper {
     display: flex;
@@ -891,8 +892,8 @@ html header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-cont
   html header .header-wrapper .nav-container .cart-icon-link {
     text-decoration: none;
     position: absolute;
-    right: 50px;
-    top: 7px;
+    right: 48px;
+    top: 7.5px;
   }
   html header .header-wrapper .nav-container .cart-icon-link .cart-icon-wrapper {
     display: flex;
