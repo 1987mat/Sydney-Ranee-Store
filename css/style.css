@@ -566,8 +566,13 @@ body .woocommerce .checkout #customer_details .woocommerce-billing-fields .form-
 body .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form-row .woocommerce-input-wrapper {
   margin-top: 0.5em;
 }
+body .woocommerce .checkout #customer_details .woocommerce-billing-fields .form-row label,
+body .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form-row label {
+  font-size: 1.25rem;
+}
 body .woocommerce .checkout #customer_details .woocommerce-billing-fields .form-row input,
 body .woocommerce .checkout #customer_details .woocommerce-shipping-fields .form-row input {
+  font-size: 1.25rem;
   padding: 0.5em;
   border-bottom: 0.5px solid;
   border-top: none;
