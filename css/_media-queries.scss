@@ -171,6 +171,16 @@ $biggerScreen2: 2559px;
       }
     }
 
+    /* My Account Page */
+    .woocommerce-account {
+      .woocommerce {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+      }
+    }
+
     /* Search overlay */
     .search-wrapper-hidden {
       .search-input-field {
@@ -227,7 +237,7 @@ $biggerScreen2: 2559px;
   html {
     font-size: 90%;
 
-    header {
+    .site_header {
       .header-wrapper {
         .nav-container {
           .dashicons-search {
@@ -332,7 +342,7 @@ $biggerScreen2: 2559px;
   html {
     font-size: 100%;
 
-    header {
+    .site_header {
       box-shadow: none;
       background-color: transparent;
 
@@ -368,7 +378,7 @@ $biggerScreen2: 2559px;
                     font-size: 1.2rem;
                   }
 
-                  &:nth-child(2) {
+                  &:nth-child(3) {
                     display: block;
                   }
                 }
@@ -501,6 +511,13 @@ $biggerScreen2: 2559px;
       }
     }
 
+    /* My Account Page */
+    .woocommerce-account {
+      .woocommerce {
+        flex-direction: row;
+      }
+    }
+
     .search-wrapper-hidden {
       .search-input-field {
         .placeholder-search-icon {
@@ -535,7 +552,7 @@ $biggerScreen2: 2559px;
 
 @media screen and (min-width: $largeDesktop) {
   html {
-    header {
+    .site_header {
       .header-wrapper {
         .logo {
           left: 25px;
@@ -586,7 +603,7 @@ $biggerScreen2: 2559px;
   html {
     font-size: 120%;
 
-    header {
+    .site_header {
       .header-wrapper {
         .nav-container {
           .dashicons-search {
@@ -618,7 +635,7 @@ $biggerScreen2: 2559px;
 
 @media screen and (min-width: $biggerScreen2) {
   html {
-    header {
+    .site_header {
       .header-wrapper {
         .nav-container {
           .dashicons-search {

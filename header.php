@@ -9,7 +9,7 @@
   <?php wp_head();?>
 </head>
 <body <?php body_class();?>>
-  <header>
+  <header class="site_header">
     <div class="header-wrapper">
       <a href="<?php echo site_url('');?>" class="logo" aria-label="logo"><img src=<?php echo get_template_directory_uri() . '/images/logo.png';?> width="300" height="40" alt="logo"></a>
       <div class="nav-container">

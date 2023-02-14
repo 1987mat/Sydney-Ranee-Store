@@ -1,128 +1,143 @@
-a {
-  color: #282828;
-}
-
-.woocommerce-cart-form {
-  margin: 2em 0;
+.woocommerce {
+  min-height: calc(100vh - 4em);
+  width: 100vw;
+  background: linear-gradient(
+    90deg,
+    rgba(230, 204, 178, 1) 0%,
+    rgba(208, 200, 167, 1) 100%
+  );
+  padding: 8em 2em;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 2px;
-  width: 90vw;
 
-  table {
-    padding: 2em 0;
-    border-collapse: separate;
-    border-spacing: 0.5em 1.5em;
-    background-color: rgba(245, 245, 245, 0.3);
-    border-radius: 5px;
-    box-shadow: 0 0 6px gray;
-    width: 80vw;
+  a {
+    color: #282828;
+  }
 
-    tbody {
-      a {
-        text-decoration: none;
+  .woocommerce-cart-form {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    width: 90vw;
 
-        &:visited {
-          color: #282828;
-        }
+    table {
+      padding: 2em 0;
+      border-collapse: separate;
+      border-spacing: 0.5em 1.5em;
+      background-color: rgba(245, 245, 245, 0.3);
+      border-radius: 5px;
+      box-shadow: 0 0 6px gray;
+      width: 80vw;
 
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      tr {
-        .remove {
+      tbody {
+        a {
           text-decoration: none;
 
-          .dashicons-trash {
+          &:visited {
             color: #282828;
-            transition: transform 0.4s ease-in-out;
-
-            &:hover {
-              transform: scale(1.1);
-            }
           }
-        }
-
-        .product-thumbnail {
-          img {
-            width: 4em;
-            height: 4em;
-            border-radius: 2px;
-            transition: transform 0.8s ease;
-
-            &:hover {
-              transform: scale(1.03);
-            }
-          }
-        }
-
-        td {
-          text-align: center;
-
-          button {
-            padding: 0.6em;
-            border-radius: 2px;
-            border: none;
-            opacity: 1;
-            transition: opacity 0.4s ease-in-out;
-
-            &:hover {
-              opacity: 0.8;
-            }
-          }
-
-          @include inputNumber(0 auto);
-
-          &:last-child {
-            font-weight: bold;
-          }
-        }
-
-        .coupon {
-          margin-top: 4em;
-
-          #coupon_code {
-            padding: 0.6em;
-            border-radius: 3px;
-            width: fit-content;
-            border: none;
-            margin: 1em;
-          }
-        }
-
-        .wp-element-button {
-          margin-top: 2em;
-          box-shadow: 0 0 6px gray;
-          border-radius: 5px;
-          background-color: $secondary-color;
-          transition: transform 0.2s ease;
 
           &:hover {
-            transform: translateY(-2px);
+            text-decoration: underline;
           }
         }
 
-        #update-cart-btn {
-          width: 12em;
-          padding: 1em;
-          font-weight: bold;
+        tr {
+          .remove {
+            text-decoration: none;
 
-          &.active {
-            border: 3px solid green;
+            .dashicons-trash {
+              color: #282828;
+              transition: transform 0.4s ease-in-out;
+
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+
+          .product-thumbnail {
+            img {
+              width: 4em;
+              height: 4em;
+              border-radius: 2px;
+              transition: transform 0.8s ease;
+
+              &:hover {
+                transform: scale(1.03);
+              }
+            }
+          }
+
+          td {
+            text-align: center;
+
+            button {
+              padding: 0.6em;
+              border-radius: 2px;
+              border: none;
+              opacity: 1;
+              transition: opacity 0.4s ease-in-out;
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+
+            @include inputNumber(0 auto);
+
+            &:last-child {
+              font-weight: bold;
+            }
+          }
+
+          .coupon {
+            margin-top: 4em;
+
+            #coupon_code {
+              padding: 0.6em;
+              border-radius: 3px;
+              width: fit-content;
+              border: none;
+              margin: 1em;
+            }
+          }
+
+          .wp-element-button {
+            margin-top: 2em;
+            box-shadow: 0 0 6px gray;
+            border-radius: 5px;
+            background-color: $secondary-color;
+            transition: transform 0.2s ease;
+
+            &:hover {
+              transform: translateY(-2px);
+            }
+          }
+
+          #update-cart-btn {
+            width: 12em;
+            padding: 1em;
+            font-weight: bold;
+
+            &.active {
+              border: 3px solid green;
+            }
           }
         }
       }
     }
   }
-}
 
-hr {
-  margin-top: 4em;
-  width: 80vw;
-  border: 0.5px solid gray;
-}
+  hr {
+    margin-top: 4em;
+    width: 80vw;
+    border: 0.5px solid gray;
+  }
 
-@import 'cart-total';
+  @import 'cart-total';
+}

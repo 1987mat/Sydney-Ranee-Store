@@ -1,4 +1,4 @@
-header {
+.site_header {
   background-color: #e7dfcc;
   box-shadow: 0 5px 5px -5px black;
 
@@ -50,7 +50,7 @@ header {
                 font-size: 2.5rem;
               }
 
-              &:nth-child(2) {
+              &:nth-child(3) {
                 display: none;
               }
 
