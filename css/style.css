@@ -814,7 +814,6 @@ body #sidebar {
   display: none;
 }
 body.woocommerce-account .woocommerce {
-  width: 100vw;
   background: linear-gradient(90deg, rgb(230, 204, 178) 0%, rgb(208, 200, 167) 100%);
   padding: 10em 2em;
   display: flex;
