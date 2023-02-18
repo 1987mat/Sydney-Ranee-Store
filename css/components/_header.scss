@@ -15,6 +15,8 @@
 
     .nav-container {
       .nav-menu-wrapper {
+        display: flex;
+
         ul {
           li {
             font-size: 1.3rem;
@@ -37,14 +39,14 @@
           }
         }
       }
-    }
 
-    .dashicons-search {
-      transition: color 0.4s ease;
+      .dashicons-search {
+        transition: color 0.4s ease;
 
-      &:hover {
-        cursor: pointer;
-        color: gainsboro;
+        &:hover {
+          cursor: pointer;
+          color: gainsboro;
+        }
       }
     }
   }

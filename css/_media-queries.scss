@@ -240,19 +240,10 @@ $biggerScreen2: 2559px;
     .site_header {
       .header-wrapper {
         .nav-container {
-          .dashicons-search {
-            right: 190px;
-            top: 10px;
-          }
-
-          .cart-icon-link {
-            right: 80px;
-            top: 10px;
-
-            .cart-icon-wrapper {
-              gap: 2em;
-            }
-          }
+          // .dashicons-search {
+          //   right: 190px;
+          //   top: 10px;
+          // }
 
           .hamburger {
             right: 15px;
@@ -364,7 +355,7 @@ $biggerScreen2: 2559px;
           .nav-menu-wrapper {
             background-color: initial;
             position: relative;
-            left: 360px;
+            left: 200px;
             height: auto;
             width: fit-content;
 
@@ -390,13 +381,9 @@ $biggerScreen2: 2559px;
             display: none;
           }
 
-          .cart-icon-link {
-            display: none;
-          }
-
           .dashicons-search {
             position: relative;
-            right: 70px;
+            right: 100px;
             top: 18px;
             font-size: 1.5rem;
           }
@@ -558,12 +545,6 @@ $biggerScreen2: 2559px;
           left: 25px;
           top: 12px;
         }
-
-        .nav-container {
-          .dashicons-search {
-            right: 70px;
-          }
-        }
       }
     }
 
@@ -606,10 +587,10 @@ $biggerScreen2: 2559px;
     .site_header {
       .header-wrapper {
         .nav-container {
-          .dashicons-search {
-            right: 170px;
-            top: 20px;
-          }
+          // .dashicons-search {
+          //   right: 170px;
+          //   top: 20px;
+          // }
 
           .nav-menu-wrapper {
             .menu-top-menu-container {
@@ -635,16 +616,6 @@ $biggerScreen2: 2559px;
 
 @media screen and (min-width: $biggerScreen2) {
   html {
-    .site_header {
-      .header-wrapper {
-        .nav-container {
-          .dashicons-search {
-            right: 150px;
-          }
-        }
-      }
-    }
-
     .search-wrapper-hidden {
       .search-input-field {
         .placeholder-search-icon {

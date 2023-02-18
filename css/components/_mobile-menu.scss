@@ -85,34 +85,9 @@
 
       .dashicons-search {
         position: absolute;
-        right: 113px;
-        top: 7.5px;
-        font-size: 3.2rem;
-      }
-
-      .cart-icon-link {
-        text-decoration: none;
-        position: absolute;
-        right: 48px;
-        top: 7.5px;
-
-        .cart-icon-wrapper {
-          display: flex;
-          gap: 1.1em;
-          width: 5em;
-
-          .dashicons-cart {
-            font-size: 3rem;
-            align-self: flex-start;
-          }
-
-          .product-count {
-            font-size: 3rem;
-            position: relative;
-            bottom: 2px;
-            align-self: flex-end;
-          }
-        }
+        right: 65px;
+        top: 10px;
+        font-size: 2.8rem;
       }
 
       .hamburger {

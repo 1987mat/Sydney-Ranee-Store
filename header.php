@@ -19,17 +19,6 @@
           ?>
         </div>
         <span class="dashicons dashicons-search search-icon-btn"></span>
-        <!-- Get cart product quantity -->
-        <?php 
-          global $woocommerce;
-          $productCount = WC()->cart->get_cart_contents_count();
-        ?>
-        <a href="<?php echo site_url('/cart');?>" class="cart-icon-link" aria-label="cart">
-          <div class="cart-icon-wrapper">
-            <span class="dashicons dashicons-cart"></span>
-            <span class="product-count"><?php echo $productCount;?></span>
-          </div>
-        </a>
         <div class="hamburger">
           <div></div>
         </div>
