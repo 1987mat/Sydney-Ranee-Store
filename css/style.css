@@ -11,6 +11,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   /* Remove sidebar single product page */
   /* My Account Page */
 }
@@ -681,6 +682,111 @@ body.woocommerce-checkout .woocommerce .checkout #order_review .woocommerce-chec
 body.woocommerce-checkout .woocommerce .checkout #order_review .woocommerce-checkout-payment .place-order button:hover {
   transform: translateY(-2px);
 }
+body #sidebar {
+  display: none;
+}
+body.woocommerce-account .woocommerce {
+  background: linear-gradient(90deg, rgb(230, 204, 178) 0%, rgb(208, 200, 167) 100%);
+  padding: 10em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body.woocommerce-account .woocommerce nav {
+  flex: 1 0 0;
+}
+body.woocommerce-account .woocommerce nav ul {
+  padding: 0 2em;
+}
+body.woocommerce-account .woocommerce nav ul li {
+  list-style-type: none;
+  background-color: rgba(245, 245, 245, 0.3);
+  margin-top: 0.2em;
+  padding: 0.8em;
+  width: 20em;
+  border-radius: 2px;
+  box-shadow: 0 0 4px gray;
+}
+body.woocommerce-account .woocommerce nav ul li.is-active {
+  background-color: rgba(245, 245, 245, 0.6);
+}
+body.woocommerce-account .woocommerce nav ul li:hover {
+  background-color: rgba(245, 245, 245, 0.6);
+  cursor: pointer;
+}
+body.woocommerce-account .woocommerce nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+body.woocommerce-account .woocommerce .woocommerce-MyAccount-content {
+  flex: 1 0 0;
+}
+body.woocommerce-account .woocommerce .woocommerce-MyAccount-content a {
+  text-decoration: underline;
+}
+body.woocommerce-account .woocommerce .woocommerce-form-login {
+  background-color: rgba(245, 245, 245, 0.6);
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 0 6px gray;
+  width: 20em;
+}
+body.woocommerce-account .woocommerce .woocommerce-form-login p input {
+  padding: 1em;
+}
+body.woocommerce-account .woocommerce .woocommerce-form-login p .woocommerce-button {
+  padding: 1em;
+  background-color: whitesmoke;
+  box-shadow: 0 0 6px gray;
+  transition: background-color 0.4s ease;
+}
+body.woocommerce-account .woocommerce .woocommerce-form-login p .woocommerce-button:hover {
+  background-color: white;
+}
+body.woocommerce-account .woocommerce .woocommerce-form-login .woocommerce-LostPassword a {
+  text-decoration: underline;
+}
+body .woocommerce .woocommerce-notices-wrapper {
+  display: none;
+}
+body .woocommerce h2 {
+  display: none;
+}
+body .woocommerce .woocommerce-form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .woocommerce .woocommerce-form-login .woocommerce-form-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+body .woocommerce .woocommerce-form-login .woocommerce-form-row input {
+  border: none;
+  border-radius: 2px;
+  padding: 0.5em;
+  width: 15em;
+}
+body .woocommerce .woocommerce-form-login .form-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+body .woocommerce .woocommerce-form-login button {
+  width: 15em;
+  border: none;
+  border-radius: 2px;
+  padding: 1em;
+  font-weight: bold;
+}
 body footer {
   background: linear-gradient(90deg, rgb(230, 204, 178) 0%, rgb(208, 200, 167) 100%);
   display: flex;
@@ -692,6 +798,7 @@ body footer {
   height: fit-content;
   padding: 2em;
   width: 100%;
+  margin-top: auto;
 }
 body footer .sm-icons-footer {
   display: flex;
@@ -812,89 +919,6 @@ body .search-wrapper-hidden .search-results ul li a:hover {
 body .search-wrapper-hidden.show {
   opacity: 1;
   z-index: 10;
-}
-body #sidebar {
-  display: none;
-}
-body.woocommerce-account .woocommerce {
-  background: linear-gradient(90deg, rgb(230, 204, 178) 0%, rgb(208, 200, 167) 100%);
-  padding: 10em 2em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-body.woocommerce-account .woocommerce nav {
-  flex: 1 0 0;
-}
-body.woocommerce-account .woocommerce nav ul {
-  padding: 0 2em;
-}
-body.woocommerce-account .woocommerce nav ul li {
-  list-style-type: none;
-  background-color: rgba(245, 245, 245, 0.3);
-  margin-top: 0.2em;
-  padding: 0.8em;
-  width: 20em;
-  border-radius: 2px;
-  box-shadow: 0 0 4px gray;
-}
-body.woocommerce-account .woocommerce nav ul li.is-active {
-  background-color: rgba(245, 245, 245, 0.6);
-}
-body.woocommerce-account .woocommerce nav ul li:hover {
-  background-color: rgba(245, 245, 245, 0.6);
-  cursor: pointer;
-}
-body.woocommerce-account .woocommerce nav ul li a {
-  text-decoration: none;
-  font-weight: bold;
-}
-body.woocommerce-account .woocommerce .woocommerce-MyAccount-content {
-  padding: 0 12em 0 0;
-  flex: 1 0 0;
-}
-body.woocommerce-account .woocommerce .woocommerce-MyAccount-content a {
-  text-decoration: underline;
-}
-body .woocommerce .woocommerce-notices-wrapper {
-  display: none;
-}
-body .woocommerce h2 {
-  display: none;
-}
-body .woocommerce .woocommerce-form-login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .woocommerce .woocommerce-form-login .woocommerce-form-row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-}
-body .woocommerce .woocommerce-form-login .woocommerce-form-row input {
-  border: none;
-  border-radius: 2px;
-  padding: 0.5em;
-  width: 15em;
-}
-body .woocommerce .woocommerce-form-login .form-row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-}
-body .woocommerce .woocommerce-form-login button {
-  width: 15em;
-  border: none;
-  border-radius: 2px;
-  padding: 1em;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 320px) {
@@ -1144,6 +1168,9 @@ body .woocommerce .woocommerce-form-login button {
     align-items: center;
     gap: 3em;
   }
+  html .woocommerce-account .woocommerce .woocommerce-MyAccount-content {
+    padding: 0;
+  }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
     position: absolute;
     left: 0;
@@ -1177,9 +1204,13 @@ body .woocommerce .woocommerce-form-login button {
   html {
     font-size: 90%;
   }
+  html .site_header .header-wrapper .nav-container .dashicons-search {
+    right: 100px;
+    top: 12px;
+  }
   html .site_header .header-wrapper .nav-container .hamburger {
     right: 15px;
-    top: 13px;
+    top: 10px;
   }
   html .content-area .products li img {
     width: 30em;
@@ -1319,6 +1350,9 @@ body .woocommerce .woocommerce-form-login button {
   }
   html .woocommerce-account .woocommerce {
     flex-direction: row;
+  }
+  html .woocommerce-account .woocommerce .woocommerce-MyAccount-content {
+    padding: 0 12em 0 0;
   }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
     top: 22px;

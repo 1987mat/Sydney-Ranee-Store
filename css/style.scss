@@ -14,6 +14,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 
   &.no-scroll {
     overflow: hidden;
@@ -86,9 +87,6 @@ body {
     @import 'components/checkout';
   }
 
-  @import 'components/footer';
-  @import 'components/search-form';
-
   /* Remove sidebar single product page */
   #sidebar {
     display: none;
@@ -146,6 +144,9 @@ body {
       }
     }
   }
+
+  @import 'components/footer';
+  @import 'components/search-form';
 }
 
 @import 'media-queries';

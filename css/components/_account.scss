@@ -9,6 +9,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 
   nav {
     flex: 1 0 0;
@@ -43,11 +44,41 @@
   }
 
   .woocommerce-MyAccount-content {
-    padding: 0 12em 0 0;
     flex: 1 0 0;
 
     a {
       text-decoration: underline;
+    }
+  }
+
+  .woocommerce-form-login {
+    background-color: $secondary-color;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 6px gray;
+    width: 20em;
+
+    p {
+      input {
+        padding: 1em;
+      }
+
+      .woocommerce-button {
+        padding: 1em;
+        background-color: whitesmoke;
+        box-shadow: 0 0 6px gray;
+        transition: background-color 0.4s ease;
+
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+
+    .woocommerce-LostPassword {
+      a {
+        text-decoration: underline;
+      }
     }
   }
 }

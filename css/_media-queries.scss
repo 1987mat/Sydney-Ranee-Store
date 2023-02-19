@@ -178,6 +178,10 @@ $biggerScreen2: 2559px;
         justify-content: center;
         align-items: center;
         gap: 3em;
+
+        .woocommerce-MyAccount-content {
+          padding: 0;
+        }
       }
     }
 
@@ -240,14 +244,14 @@ $biggerScreen2: 2559px;
     .site_header {
       .header-wrapper {
         .nav-container {
-          // .dashicons-search {
-          //   right: 190px;
-          //   top: 10px;
-          // }
+          .dashicons-search {
+            right: 100px;
+            top: 12px;
+          }
 
           .hamburger {
             right: 15px;
-            top: 13px;
+            top: 10px;
           }
         }
       }
@@ -502,6 +506,10 @@ $biggerScreen2: 2559px;
     .woocommerce-account {
       .woocommerce {
         flex-direction: row;
+
+        .woocommerce-MyAccount-content {
+          padding: 0 12em 0 0;
+        }
       }
     }
 
