@@ -1,6 +1,6 @@
 # Sydney Raneé Store
 
-<p>Sydney Raneé official store. Developed with Wordpress / WooCommerce.</p>
+<p>Sydney Raneé Official Online Store. Custom theme developed with Wordpress & WooCommerce.</p>
 
 ## Links
 
