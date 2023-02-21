@@ -372,10 +372,6 @@ $biggerScreen2: 2559px;
                   a {
                     font-size: 1.2rem;
                   }
-
-                  &:nth-child(3) {
-                    display: block;
-                  }
                 }
               }
             }
@@ -431,6 +427,10 @@ $biggerScreen2: 2559px;
         .related {
           h2 {
             font-size: 2.5rem;
+          }
+
+          .wp-element-button {
+            font-size: initial;
           }
         }
       }
