@@ -39,40 +39,10 @@ body .site_header .header-wrapper .nav-container .nav-menu-wrapper ul li {
   font-size: 1.3rem;
 }
 body .site_header .header-wrapper .nav-container .nav-menu-wrapper ul li a {
-  text-decoration: none;
   font-weight: bold;
-  position: relative;
-  transition: color 0.4s ease;
-}
-body .site_header .header-wrapper .nav-container .nav-menu-wrapper ul li a:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 3px;
-  display: block;
-  margin-top: 6px;
-  right: 0;
-  background-color: whitesmoke;
-  transition: width 0.4s ease;
-  -webkit-transition: width 0.4s ease;
-}
-body .site_header .header-wrapper .nav-container .nav-menu-wrapper ul li a:hover {
-  color: whitesmoke;
-}
-body .site_header .header-wrapper .nav-container .nav-menu-wrapper ul li a:hover:after {
-  width: 100%;
-  left: 0;
 }
 body .site_header .header-wrapper .nav-container .nav-menu-wrapper ul li a:hover span {
   color: whitesmoke;
-}
-body .site_header .header-wrapper .nav-container .nav-menu-wrapper ul li.current_page_item a,
-body .site_header .header-wrapper .nav-container .nav-menu-wrapper ul li.current_page_item span {
-  color: whitesmoke;
-}
-body .site_header .header-wrapper .nav-container .nav-menu-wrapper ul li.current_page_item a:after {
-  width: 100%;
-  left: 0;
 }
 body .site_header .header-wrapper .nav-container .dashicons-search {
   transition: color 0.4s ease;
@@ -794,16 +764,20 @@ body.woocommerce-account .woocommerce .woocommerce-form-login {
   background-color: rgba(245, 245, 245, 0.6);
   padding: 2em;
   border-radius: 5px;
-  box-shadow: 0 0 6px gray;
-  width: 20em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 body.woocommerce-account .woocommerce .woocommerce-form-login p input {
   padding: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
 }
 body.woocommerce-account .woocommerce .woocommerce-form-login p .woocommerce-button {
   padding: 1em;
   background-color: whitesmoke;
-  box-shadow: 0 0 6px gray;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: background-color 0.4s ease;
 }
 body.woocommerce-account .woocommerce .woocommerce-form-login p .woocommerce-button:hover {
@@ -1195,6 +1169,9 @@ body .search-wrapper-hidden.show {
   html .woocommerce-account .woocommerce .woocommerce-MyAccount-content {
     padding: 0;
   }
+  html .woocommerce-account .woocommerce .woocommerce-form-login {
+    width: 80vw;
+  }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
     position: absolute;
     left: 0;
@@ -1307,6 +1284,37 @@ body .search-wrapper-hidden.show {
   }
   html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li a {
     font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.4s ease;
+  }
+  html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 6px;
+    right: 0;
+    background-color: whitesmoke;
+    transition: width 0.4s ease;
+    -webkit-transition: width 0.4s ease;
+  }
+  html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li a:hover {
+    color: whitesmoke;
+  }
+  html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li.current_page_item a,
+  html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li.current_page_item span {
+    color: whitesmoke;
+  }
+  html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li.current_page_item a:after {
+    width: 100%;
+    left: 0;
   }
   html .site_header .header-wrapper .nav-container .hamburger {
     display: none;
@@ -1377,6 +1385,9 @@ body .search-wrapper-hidden.show {
   }
   html .woocommerce-account .woocommerce .woocommerce-MyAccount-content {
     padding: 0 12em 0 0;
+  }
+  html .woocommerce-account .woocommerce .woocommerce-form-login {
+    width: 50vw;
   }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
     top: 22px;

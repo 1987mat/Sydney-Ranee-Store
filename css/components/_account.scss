@@ -55,18 +55,22 @@
     background-color: $secondary-color;
     padding: 2em;
     border-radius: 5px;
-    box-shadow: 0 0 6px gray;
-    width: 20em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     p {
       input {
         padding: 1em;
+        border: none;
+        border-radius: 5px;
+        background-color: whitesmoke;
       }
 
       .woocommerce-button {
         padding: 1em;
         background-color: whitesmoke;
-        box-shadow: 0 0 6px gray;
+        border: none;
+        border-radius: 5px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         transition: background-color 0.4s ease;
 
         &:hover {

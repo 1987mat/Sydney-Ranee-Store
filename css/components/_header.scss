@@ -22,49 +22,12 @@
             font-size: 1.3rem;
 
             a {
-              text-decoration: none;
               font-weight: bold;
-              position: relative;
-              transition: color 0.4s ease;
-
-              &:after {
-                content: '';
-                position: absolute;
-                width: 0;
-                height: 3px;
-                display: block;
-                margin-top: 6px;
-                right: 0;
-                background-color: whitesmoke;
-                transition: width 0.4s ease;
-                -webkit-transition: width 0.4s ease;
-              }
-
-              &:hover {
-                color: whitesmoke;
-              }
-
-              &:hover:after {
-                width: 100%;
-                left: 0;
-              }
 
               &:hover {
                 span {
                   color: whitesmoke;
                 }
-              }
-            }
-
-            &.current_page_item {
-              a,
-              span {
-                color: whitesmoke;
-              }
-
-              a:after {
-                width: 100%;
-                left: 0;
               }
             }
           }
