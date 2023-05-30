@@ -27,8 +27,7 @@ body {
     background: $primary-color;
 
     .site-main {
-      margin-top: 6em;
-      padding: 2em;
+      margin-top: 10em;
 
       .homepage-title {
         text-align: center;
@@ -82,6 +81,8 @@ body {
       @import './components/404';
     }
   }
+
+  @import 'components/contact';
 
   .woocommerce {
     .woocommerce-notices-wrapper {
