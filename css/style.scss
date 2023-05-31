@@ -7,6 +7,8 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   color: #383838;
+  /* Prevent any object from being highlighted upon touch event */
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {

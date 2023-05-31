@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: #383838;
+  /* Prevent any object from being highlighted upon touch event */
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -275,44 +277,28 @@ body.page-id-68 h1 {
   text-align: center;
   margin-top: 4em;
   font-size: 3rem;
+  font-family: "Kalam", cursive;
 }
 body.page-id-68 .contact-container {
-  width: 100%;
-  margin-top: 3em;
-  display: flex;
-  justify-content: space-between;
-  padding: 3em;
+  margin-top: 4em;
+  margin-bottom: 8em;
 }
 body.page-id-68 .contact-container .wpforms-container {
-  padding: 0;
-  margin: 0;
+  flex: 40%;
+}
+body.page-id-68 .contact-container .wpforms-container form .submit-btn {
+  background-color: burlywood;
+  font-weight: bold;
+  transition: background-color 0.4s ease !important;
+}
+body.page-id-68 .contact-container .wpforms-container form .submit-btn:hover {
+  background-color: brown !important;
+}
+body.page-id-68 .contact-container .image-wrapper {
+  flex: 60%;
+}
+body.page-id-68 .contact-container .image-wrapper img {
   width: 100%;
-}
-body.page-id-68 .contact-container .wpforms-container form {
-  display: flex;
-  position: relative;
-}
-body.page-id-68 .contact-container .wpforms-container form #wpforms-field-email {
-  position: absolute;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 4em;
-  padding: 0;
-  margin: 0;
-}
-body.page-id-68 .contact-container .wpforms-container form #wpforms-field-email input {
-  border: 1px solid red;
-}
-body.page-id-68 .contact-container .wpforms-container form .wpforms-submit-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 8rem;
-  height: 4em;
-  padding: 0;
-  margin: 0;
 }
 body .woocommerce .woocommerce-notices-wrapper {
   display: none;
@@ -854,7 +840,7 @@ body footer {
 }
 body footer .sm-icons-footer {
   display: flex;
-  gap: 2em;
+  gap: 1em;
 }
 body footer .sm-icons-footer a {
   text-decoration: none;
@@ -978,6 +964,7 @@ body .search-wrapper-hidden.show {
     font-size: 65%;
     /* Cart page */
     /* My Account Page */
+    /* Contact Page */
     /* Search overlay */
   }
   html .site_header {
@@ -1239,6 +1226,16 @@ body .search-wrapper-hidden.show {
   html .woocommerce-account .woocommerce .woocommerce-form-login {
     width: 80vw;
   }
+  html .page-id-68 .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 3em;
+  }
+  html .page-id-68 .contact-container .wpforms-container {
+    padding: 2em;
+  }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
     position: absolute;
     left: 0;
@@ -1314,14 +1311,13 @@ body .search-wrapper-hidden.show {
   html .site_header {
     box-shadow: none;
     background-color: transparent;
-    transition: top 0.6s ease, background-color 0.6s ease, box-shadow 0.6s ease;
+    transition: top 0.6s ease, background-color 0.6s ease;
   }
   html .site_header.hide {
     top: -200px;
   }
   html .site_header.show {
     background-color: #e7dfcc;
-    box-shadow: 0 5px 5px -5px black;
   }
   html .site_header .header-wrapper {
     position: relative;
@@ -1460,6 +1456,13 @@ body .search-wrapper-hidden.show {
   }
   html .woocommerce-account .woocommerce .woocommerce-form-login {
     width: 50vw;
+  }
+  html .page-id-68 .contact-container {
+    flex-direction: row;
+  }
+  html .page-id-68 .contact-container .wpforms-container {
+    padding: 2em 0 0 6em;
+    gap: 0;
   }
   html .search-wrapper-hidden .search-input-field .placeholder-search-icon {
     top: 22px;

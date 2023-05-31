@@ -14,48 +14,35 @@
     text-align: center;
     margin-top: 4em;
     font-size: 3rem;
+    font-family: 'Kalam', cursive;
   }
 
   .contact-container {
-    width: 100%;
-    margin-top: 3em;
-    display: flex;
-    justify-content: space-between;
-    padding: 3em;
+    margin-top: 4em;
+    margin-bottom: 8em;
 
     .wpforms-container {
-      padding: 0;
-      margin: 0;
-      width: 100%;
+      flex: 40%;
 
       form {
-        display: flex;
-        position: relative;
+        .submit-btn {
+          background-color: burlywood;
+          font-weight: bold;
 
-        #wpforms-field-email {
-          position: absolute;
-          left: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 4em;
-          padding: 0;
-          margin: 0;
+          transition: background-color 0.4s ease !important;
 
-          input {
-            border: 1px solid red;
+          &:hover {
+            background-color: brown !important;
           }
         }
+      }
+    }
 
-        .wpforms-submit-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          left: 8rem;
-          height: 4em;
-          padding: 0;
-          margin: 0;
-        }
+    .image-wrapper {
+      flex: 60%;
+
+      img {
+        width: 100%;
       }
     }
   }

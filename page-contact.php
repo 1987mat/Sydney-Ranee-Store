@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h1>Contact</h1>
+<h1>GET IN TOUCH</h1>
 
 <div class="contact-container">
 
@@ -8,7 +8,9 @@
     the_content();
   ?>
 
-  <div>image here</div>
+  <div class="image-wrapper">
+    <img src=<?php echo get_template_directory_uri() . '/images/14.jpg';?> alt="contact-photo">
+  </div>
 
 </div>
 
