@@ -25,10 +25,13 @@
       flex: 40%;
 
       form {
+        input {
+          border: none !important;
+        }
+
         .submit-btn {
           background-color: burlywood;
           font-weight: bold;
-
           transition: background-color 0.4s ease !important;
 
           &:hover {

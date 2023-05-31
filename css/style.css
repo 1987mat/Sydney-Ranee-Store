@@ -286,6 +286,9 @@ body.page-id-68 .contact-container {
 body.page-id-68 .contact-container .wpforms-container {
   flex: 40%;
 }
+body.page-id-68 .contact-container .wpforms-container form input {
+  border: none !important;
+}
 body.page-id-68 .contact-container .wpforms-container form .submit-btn {
   background-color: burlywood;
   font-weight: bold;
