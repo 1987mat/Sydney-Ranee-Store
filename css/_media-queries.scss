@@ -13,10 +13,6 @@ $biggerScreen2: 2559px;
   html {
     font-size: 65%;
 
-    &.no-scroll {
-      overflow: hidden;
-    }
-
     @import 'components/mobile-menu';
 
     .content-area {
