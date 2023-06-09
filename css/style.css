@@ -17,9 +17,6 @@ body {
   /* My Account Page */
   /* Remove sidebar single product page */
 }
-body.no-scroll {
-  overflow: hidden;
-}
 body .site_header {
   height: -moz-fit-content;
   height: fit-content;
@@ -970,6 +967,9 @@ body .search-wrapper-hidden.show {
     /* Contact Page */
     /* Search overlay */
   }
+  html.no-scroll {
+    overflow: hidden;
+  }
   html .site_header {
     background-color: #e7dfcc;
     box-shadow: 0 5px 5px -5px black;
@@ -1074,7 +1074,7 @@ body .search-wrapper-hidden.show {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 18em;
+    gap: 6em;
   }
   html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li {
     list-style-type: none;
@@ -1082,7 +1082,7 @@ body .search-wrapper-hidden.show {
     transition: transform 0.5s ease;
   }
   html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li a {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li:nth-child(3) {
     display: none;
@@ -1342,10 +1342,10 @@ body .search-wrapper-hidden.show {
   }
   html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul {
     flex-direction: row;
-    gap: 6em;
+    gap: 7em;
   }
   html .site_header .header-wrapper .nav-container .nav-menu-wrapper .menu-top-menu-container ul li a {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     text-decoration: none;
     font-weight: bold;
     position: relative;

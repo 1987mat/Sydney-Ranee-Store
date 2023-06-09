@@ -59,7 +59,7 @@ class MobileMenu {
     this.hamburger.addEventListener('click', () => {
       this.navMenu.classList.toggle('open');
       this.hamburger.classList.toggle('active');
-      document.body.classList.toggle('no-scroll');
+      document.documentElement.classList.toggle('no-scroll');
     });
   }
 }

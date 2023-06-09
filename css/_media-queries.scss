@@ -13,6 +13,10 @@ $biggerScreen2: 2559px;
   html {
     font-size: 65%;
 
+    &.no-scroll {
+      overflow: hidden;
+    }
+
     @import 'components/mobile-menu';
 
     .content-area {
@@ -377,11 +381,11 @@ $biggerScreen2: 2559px;
             .menu-top-menu-container {
               ul {
                 flex-direction: row;
-                gap: 6em;
+                gap: 7em;
 
                 li {
                   a {
-                    font-size: 1.2rem;
+                    font-size: 1.25rem;
                     text-decoration: none;
                     font-weight: bold;
                     position: relative;
@@ -620,87 +624,3 @@ $biggerScreen2: 2559px;
     }
   }
 }
-
-// @media screen and (min-width: $largeDesktop) {
-//   html {
-//     .site_header {
-//       .header-wrapper {
-//         // .logo {
-//         //   left: 25px;
-//         //   top: 12px;
-//         // }
-//       }
-//     }
-
-//     .content-area {
-//       .product {
-//         .entry-summary {
-//           gap: 3em;
-//         }
-//       }
-//     }
-
-//     .woocommerce {
-//       .checkout {
-//         #order_review {
-//           .woocommerce-checkout-payment {
-//             .place-order {
-//               button {
-//                 font-size: initial;
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-
-//     .search-wrapper-hidden {
-//       .search-input-field {
-//         .placeholder-search-icon {
-//           left: 40px;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (min-width: $biggerScreen) {
-//   html {
-//     font-size: 120%;
-
-//     .site_header {
-//       .header-wrapper {
-//         .nav-container {
-//           .nav-menu-wrapper {
-//             .menu-top-menu-container {
-//               ul {
-//                 gap: 8em;
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-
-//     .search-wrapper-hidden {
-//       .search-input-field {
-//         .placeholder-search-icon {
-//           left: 70px;
-//           top: 25px;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (min-width: $biggerScreen2) {
-//   html {
-//     .search-wrapper-hidden {
-//       .search-input-field {
-//         .placeholder-search-icon {
-//           left: 100px;
-//         }
-//       }
-//     }
-//   }
-// }
