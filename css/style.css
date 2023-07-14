@@ -59,6 +59,7 @@ html body .content-area {
 }
 html body .content-area .site-main {
   margin-top: 10em;
+  padding: 1em;
 }
 html body .content-area .site-main .homepage-title {
   text-align: center;
@@ -130,7 +131,7 @@ html body .content-area .site-main .products li .woocommerce-LoopProduct-link .w
 html body .content-area .site-main .products li .woocommerce-LoopProduct-link .price {
   font-weight: bold;
 }
-html body .content-area .site-main .products li .wp-element-button {
+html body .content-area .site-main .products li .add_to_cart_button {
   background-color: rgba(245, 245, 245, 0.6);
   padding: 1em;
   border-radius: 5px;
@@ -142,7 +143,7 @@ html body .content-area .site-main .products li .wp-element-button {
   transform: translateY(0);
   transition: transform 0.4s ease;
 }
-html body .content-area .site-main .products li .wp-element-button:hover {
+html body .content-area .site-main .products li .add_to_cart_button:hover {
   transform: translateY(-2px);
 }
 html body .content-area .site-main .products li img {
@@ -216,7 +217,7 @@ html body .content-area .site-main .product .entry-summary .cart .quantity .minu
 html body .content-area .site-main .product .entry-summary .cart .quantity .plus:hover {
   cursor: pointer;
 }
-html body .content-area .site-main .product .entry-summary .cart .wp-element-button {
+html body .content-area .site-main .product .entry-summary .cart .single_add_to_cart_button {
   background-color: rgba(245, 245, 245, 0.6);
   padding: 1em;
   border-radius: 5px;
@@ -230,7 +231,7 @@ html body .content-area .site-main .product .entry-summary .cart .wp-element-but
   margin: 0;
   font-size: 1rem;
 }
-html body .content-area .site-main .product .entry-summary .cart .wp-element-button:hover {
+html body .content-area .site-main .product .entry-summary .cart .single_add_to_cart_button:hover {
   transform: translateY(-2px);
 }
 html body .content-area .site-main .product .entry-summary .product_meta {
