@@ -844,7 +844,7 @@ html body footer {
 }
 html body footer .sm-icons-footer {
   display: flex;
-  gap: 1em;
+  gap: 2em;
 }
 html body footer .sm-icons-footer a {
   text-decoration: none;
@@ -852,6 +852,9 @@ html body footer .sm-icons-footer a {
 }
 html body footer .sm-icons-footer a:hover {
   transform: scale(1.1);
+}
+html body footer .sm-icons-footer span {
+  font-size: 1.5rem;
 }
 html body footer span {
   font-weight: bold;
@@ -1117,7 +1120,7 @@ html body .search-wrapper-hidden.show {
     gap: 10em;
   }
   html .content-area .products li .price,
-  html .content-area .products li .wp-element-button {
+  html .content-area .products li .add_to_cart_button {
     font-size: 2rem;
   }
   html .content-area .product {
@@ -1149,7 +1152,7 @@ html body .search-wrapper-hidden.show {
   html .content-area .product .entry-summary .cart input {
     font-size: 1.5rem;
   }
-  html .content-area .product .entry-summary .cart .wp-element-button {
+  html .content-area .product .entry-summary .cart .add_to_cart_button {
     font-weight: bold;
     font-size: 1.5rem;
   }
@@ -1178,7 +1181,7 @@ html body .search-wrapper-hidden.show {
   html .content-area .product .related .woocommerce-LoopProduct-link .price {
     font-size: 1.5rem;
   }
-  html .content-area .product .related .wp-element-button {
+  html .content-area .product .related .add_to_cart_button {
     font-size: 1.5rem;
   }
   html .woocommerce {
@@ -1278,7 +1281,7 @@ html body .search-wrapper-hidden.show {
     height: 30em;
   }
   html .content-area .products li .price,
-  html .content-area .products li .wp-element-button {
+  html .content-area .products li .add_to_cart_button {
     font-size: 1rem;
   }
   html .content-area .product {
@@ -1286,7 +1289,7 @@ html body .search-wrapper-hidden.show {
     flex-wrap: nowrap;
   }
   html .content-area .product .entry-summary li .price,
-  html .content-area .product .entry-summary li .wp-element-button {
+  html .content-area .product .entry-summary li .add_to_cart_button {
     font-size: 1rem;
   }
   html .woocommerce .checkout #customer_details .woocommerce-billing-fields .form-row,
@@ -1401,7 +1404,7 @@ html body .search-wrapper-hidden.show {
     gap: 6em;
   }
   html .content-area .products li .price,
-  html .content-area .products li .wp-element-button {
+  html .content-area .products li .add_to_cart_button {
     font-size: 1rem;
   }
   html .content-area .product .entry-summary {
@@ -1410,7 +1413,7 @@ html body .search-wrapper-hidden.show {
   html .content-area .product .entry-summary .price {
     font-size: initial;
   }
-  html .content-area .product .entry-summary .cart .wp-element-button {
+  html .content-area .product .entry-summary .cart .add_to_cart_button {
     font-size: initial;
   }
   html .content-area .product .entry-summary .cart .quantity input {
@@ -1419,7 +1422,7 @@ html body .search-wrapper-hidden.show {
   html .content-area .product .related h2 {
     font-size: 2.5rem;
   }
-  html .content-area .product .related .wp-element-button {
+  html .content-area .product .related .add_to_cart_button {
     font-size: initial;
   }
   html .woocommerce .woocommerce-cart-form table {
@@ -1435,7 +1438,7 @@ html body .search-wrapper-hidden.show {
   html .woocommerce .actions .submit {
     font-size: initial;
   }
-  html .woocommerce .actions .wp-element-button {
+  html .woocommerce .actions .add_to_cart_button {
     font-size: initial;
   }
   html .woocommerce .actions #update-cart-btn {
