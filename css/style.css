@@ -59,7 +59,7 @@ html body .content-area {
 }
 html body .content-area .site-main {
   margin-top: 10em;
-  padding: 1em;
+  padding: 0.5em;
 }
 html body .content-area .site-main .homepage-title {
   text-align: center;
@@ -1121,7 +1121,7 @@ html body .search-wrapper-hidden.show {
   }
   html .content-area .products li .price,
   html .content-area .products li .add_to_cart_button {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   html .content-area .product {
     display: flex;
@@ -1144,7 +1144,7 @@ html body .search-wrapper-hidden.show {
   }
   html .content-area .product .entry-summary .price {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   html .content-area .product .entry-summary .cart {
     gap: 1em;
@@ -1152,9 +1152,9 @@ html body .search-wrapper-hidden.show {
   html .content-area .product .entry-summary .cart input {
     font-size: 1.5rem;
   }
-  html .content-area .product .entry-summary .cart .add_to_cart_button {
+  html .content-area .product .entry-summary .cart .single_add_to_cart_button {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   html .content-area .product .related {
     display: flex;
@@ -1181,7 +1181,7 @@ html body .search-wrapper-hidden.show {
   html .content-area .product .related .woocommerce-LoopProduct-link .price {
     font-size: 1.5rem;
   }
-  html .content-area .product .related .add_to_cart_button {
+  html .content-area .product .related .woocommerce-LoopProduct-link .add_to_cart_button {
     font-size: 1.5rem;
   }
   html .woocommerce {
@@ -1289,7 +1289,7 @@ html body .search-wrapper-hidden.show {
     flex-wrap: nowrap;
   }
   html .content-area .product .entry-summary li .price,
-  html .content-area .product .entry-summary li .add_to_cart_button {
+  html .content-area .product .entry-summary li .single_add_to_cart_button {
     font-size: 1rem;
   }
   html .woocommerce .checkout #customer_details .woocommerce-billing-fields .form-row,
@@ -1413,7 +1413,7 @@ html body .search-wrapper-hidden.show {
   html .content-area .product .entry-summary .price {
     font-size: initial;
   }
-  html .content-area .product .entry-summary .cart .add_to_cart_button {
+  html .content-area .product .entry-summary .cart .single_add_to_cart_button {
     font-size: initial;
   }
   html .content-area .product .entry-summary .cart .quantity input {
