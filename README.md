@@ -1,6 +1,6 @@
 # Sydney Raneé Store
 
-<p>Sydney Raneé Official Online Store. Custom theme developed with Wordpress & WooCommerce.</p>
+<p>Sydney Raneé Official Online Store. Custom theme developed with WordPress & WooCommerce.</p>
 
 ## Links
 
@@ -18,7 +18,7 @@
 - SCSS
 - JavaScript
 - PHP
-- Wordpress
+- WordPress
 - WooCommerce
 
 ## Author
