@@ -751,6 +751,7 @@ html body.woocommerce-checkout .woocommerce .checkout #order_review .woocommerce
   transform: translateY(0);
   transition: transform 0.4s ease;
   font-weight: bold;
+  font-size: 1rem;
   width: 20em;
   background-color: rgba(245, 245, 245, 0.6);
   box-shadow: 0 3px 2px -2px gray;

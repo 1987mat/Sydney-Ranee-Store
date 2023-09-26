@@ -175,6 +175,7 @@
           button {
             @include button();
             font-weight: bold;
+            font-size: 1rem;
             width: 20em;
             background-color: $secondary-color;
             box-shadow: 0 3px 2px -2px gray;
